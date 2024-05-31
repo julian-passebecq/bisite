@@ -1,0 +1,40 @@
+.App {
+  font-family: sans-serif;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  overflow: auto;
+}
+
+.kpi-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.kpi-table th, .kpi-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.kpi-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.kpi-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.kpi-table tr:hover {
+  background-color: #ddd;
+}
+

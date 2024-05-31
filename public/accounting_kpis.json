@@ -1,0 +1,18 @@
+{
+  "General Ledger": [
+    { "Category": "General Ledger", "Definition": "Tracks all financial transactions", "CalculationMethod": "Sum of all debits and credits", "Example": "Example: Total debits = $500, Total credits = $500" },
+    { "Category": "General Ledger", "Definition": "Tracks all financial transactions", "CalculationMethod": "Sum of all debits and credits", "Example": "Example: Total debits = $500, Total credits = $500" }
+  ],
+  "Accounts Payable": [
+    { "Category": "Accounts Payable", "Definition": "Tracks money owed by the company", "CalculationMethod": "Sum of all outstanding payables", "Example": "Example: Total payables = $2000" }
+  ],
+  "Accounts Receivable": [
+    { "Category": "Accounts Receivable", "Definition": "Tracks money owed to the company", "CalculationMethod": "Sum of all outstanding receivables", "Example": "Example: Total receivables = $3000" }
+  ],
+  "Fixed Assets": [
+    { "Category": "Fixed Assets", "Definition": "Tracks the value of fixed assets", "CalculationMethod": "Net book value = Cost - Accumulated depreciation", "Example": "Example: Net book value = $10000 - $2000 = $8000" }
+  ],
+  "Financial Reporting and Analysis": [
+    { "Category": "Financial Reporting and Analysis", "Definition": "Tracks financial performance through reports and analysis", "CalculationMethod": "Varies by report type", "Example": "Example: Income statement shows a net profit of $5000" }
+  ]
+}

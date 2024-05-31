@@ -1,0 +1,38 @@
+.sub-nav {
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+    height: 100vh;
+    overflow: auto;
+    background-color: #fafafa;
+}
+
+.sub-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-nav-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.sub-nav-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.sub-nav-btn-name {
+    font-size: 14px;
+}

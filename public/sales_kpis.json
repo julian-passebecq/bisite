@@ -1,0 +1,17 @@
+{
+  "Sales Order Management": [
+    { "Category": "Sales Order Management", "Definition": "Tracks the status and performance of sales orders", "CalculationMethod": "Sum of all sales orders processed", "Example": "Example: Total sales orders = 100" }
+  ],
+  "Customer Relationship Management (CRM)": [
+    { "Category": "Customer Relationship Management (CRM)", "Definition": "Tracks customer interactions and relationships", "CalculationMethod": "Number of interactions recorded", "Example": "Example: Total interactions = 50" }
+  ],
+  "Sales Performance Analytics": [
+    { "Category": "Sales Performance Analytics", "Definition": "Tracks sales performance metrics", "CalculationMethod": "Sum of sales revenue", "Example": "Example: Total sales revenue = $10000" }
+  ],
+  "Lead Management": [
+    { "Category": "Lead Management", "Definition": "Tracks the progress of sales leads", "CalculationMethod": "Number of leads converted", "Example": "Example: Total leads converted = 20" }
+  ],
+  "Quotation and Pricing": [
+    { "Category": "Quotation and Pricing", "Definition": "Tracks the issuance and acceptance of sales quotations", "CalculationMethod": "Number of quotations issued", "Example": "Example: Total quotations = 30" }
+  ]
+}
