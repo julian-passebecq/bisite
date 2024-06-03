@@ -1,23 +1,158 @@
 {
-    "Campaign Performance": [
-        { "Category": "Campaign Performance", "Definition": "Tracks the effectiveness of marketing campaigns", "CalculationMethod": "Conversion rate = (Conversions / Total visitors) * 100", "Example": "Conversions = 50, Total visitors = 1000, Conversion rate = 5%" },
-        { "Category": "Campaign Performance", "Definition": "Measures click-through rate", "CalculationMethod": "Click-through rate (CTR) = (Clicks / Impressions) * 100", "Example": "Clicks = 100, Impressions = 5000, CTR = 2%" },
-        { "Category": "Campaign Performance", "Definition": "Tracks return on marketing investment", "CalculationMethod": "ROMI = (Revenue from campaign - Cost of campaign) / Cost of campaign * 100", "Example": "Revenue = $15000, Cost = $5000, ROMI = 200%" },
-        { "Category": "Campaign Performance", "Definition": "Measures cost per conversion", "CalculationMethod": "Cost per conversion = Total campaign cost / Number of conversions", "Example": "Total cost = $1000, Conversions = 50, Cost per conversion = $20" },
-        { "Category": "Campaign Performance", "Definition": "Tracks engagement rate", "CalculationMethod": "Engagement rate = (Total engagements / Total reach) * 100", "Example": "Total engagements = 200, Total reach = 1000, Engagement rate = 20%" }
-    ],
-    "Customer Acquisition Cost": [
-        { "Category": "Customer Acquisition Cost", "Definition": "Tracks the cost to acquire a new customer", "CalculationMethod": "CAC = Total marketing cost / Number of new customers", "Example": "Total marketing cost = $10000, New customers = 100, CAC = $100" },
-        { "Category": "Customer Acquisition Cost", "Definition": "Measures customer acquisition efficiency", "CalculationMethod": "Customer acquisition efficiency = (Revenue from new customers / CAC) * 100", "Example": "Revenue = $20000, CAC = $10000, Efficiency = 200%" },
-        { "Category": "Customer Acquisition Cost", "Definition": "Tracks cost per lead", "CalculationMethod": "Cost per lead = Total lead generation cost / Number of leads", "Example": "Total lead cost = $5000, Leads = 200, Cost per lead = $25" },
-        { "Category": "Customer Acquisition Cost", "Definition": "Measures lifetime value to CAC ratio", "CalculationMethod": "LTV:CAC ratio = Customer lifetime value / CAC", "Example": "LTV = $500, CAC = $100, Ratio = 5" },
-        { "Category": "Customer Acquisition Cost", "Definition": "Tracks marketing qualified leads (MQL)", "CalculationMethod": "Number of MQLs generated", "Example": "MQLs = 50" }
-    ],
-    "Brand Awareness": [
-        { "Category": "Brand Awareness", "Definition": "Tracks the level of brand awareness", "CalculationMethod": "Brand recall rate = (Number of respondents who recall the brand / Total respondents) * 100", "Example": "Respondents recalling brand = 200, Total respondents = 500, Recall rate = 40%" },
-        { "Category": "Brand Awareness", "Definition": "Measures brand reach", "CalculationMethod": "Total reach = Number of unique individuals exposed to the brand", "Example": "Total reach = 10000" },
-        { "Category": "Brand Awareness", "Definition": "Tracks social media mentions", "CalculationMethod": "Number of brand mentions on social media", "Example": "Brand mentions = 500" },
-        { "Category": "Brand Awareness", "Definition": "Measures share of voice", "CalculationMethod": "Share of voice = (Brand mentions / Total mentions in industry) * 100", "Example": "Brand mentions = 500, Total mentions = 5000, Share of voice = 10%" },
-        { "Category": "Brand Awareness", "Definition": "Tracks brand sentiment", "CalculationMethod": "Brand sentiment = (Positive mentions - Negative mentions) / Total mentions", "Example": "Positive mentions = 300, Negative mentions = 100, Total mentions = 500, Sentiment = 40%" }
-    ]
+  "Campaign Performance": [
+    {
+      "Category": "Campaign Performance",
+      "KPI": "Conversion Rate",
+      "Traduction": "Taux de Conversion",
+      "Definition": "Measures the percentage of visitors who take a desired action, such as making a purchase.",
+      "Formula": "(Conversions / Total Visitors) * 100",
+      "Example": "50 conversions, 1,000 visitors -> Conversion Rate = 5%",
+      "Excel": "=(COUNT(Conversions) / COUNT(Visitors)) * 100",
+      "Remark": "Higher rates indicate effective campaigns."
+    },
+    {
+      "Category": "Campaign Performance",
+      "KPI": "Click-through Rate (CTR)",
+      "Traduction": "Taux de Clics (CTR)",
+      "Definition": "Measures the percentage of people who click on an ad after seeing it.",
+      "Formula": "(Clicks / Impressions) * 100",
+      "Example": "100 clicks, 5,000 impressions -> CTR = 2%",
+      "Excel": "=(COUNT(Clicks) / COUNT(Impressions)) * 100",
+      "Remark": "Higher rates indicate more engaging ads."
+    },
+    {
+        "Category": "Campaign Performance",
+        "KPI": "Return on Marketing Investment (ROMI)",
+        "Traduction": "Retour sur Investissement Marketing (ROMI)",
+        "Definition": "Measures the revenue generated for every dollar spent on marketing.",
+        "Formula": "(Revenue from Campaign - Cost of Campaign) / Cost of Campaign * 100",
+        "Example": "$15,000 revenue, $5,000 cost -> ROMI = 200%",
+        "Excel": "=((SUM(Revenue) - SUM(Cost)) / SUM(Cost)) * 100",
+        "Remark": "Higher ROMI indicates more effective marketing."
+    },
+    {
+        "Category": "Campaign Performance",
+        "KPI": "Cost per Conversion",
+        "Traduction": "Coût par Conversion",
+        "Definition": "Measures the average cost to achieve a conversion.",
+        "Formula": "Total Campaign Cost / Number of Conversions",
+        "Example": "$1,000 campaign cost, 50 conversions -> Cost per Conversion = $20",
+        "Excel": "=SUM(Campaign_Cost) / COUNT(Conversions)",
+        "Remark": "Lower costs indicate more efficient campaigns."
+    },
+    {
+        "Category": "Campaign Performance",
+        "KPI": "Engagement Rate",
+        "Traduction": "Taux d'Engagement",
+        "Definition": "Measures the level of interaction from users with a campaign.",
+        "Formula": "(Total Engagements / Total Reach) * 100",
+        "Example": "200 engagements, 1,000 reach -> Engagement Rate = 20%",
+        "Excel": "=(COUNT(Engagements) / COUNT(Reach)) * 100",
+        "Remark": "Higher rates indicate more engaging content."
+    }
+  ],
+  "Customer Acquisition Cost": [
+      {
+          "Category": "Customer Acquisition Cost",
+          "KPI": "Customer Acquisition Cost (CAC)",
+          "Traduction": "Coût d'Acquisition Client (CAC)",
+          "Definition": "Measures the total cost to acquire a new customer.",
+          "Formula": "Total Marketing Cost / Number of New Customers",
+          "Example": "$10,000 marketing cost, 100 new customers -> CAC = $100",
+          "Excel": "=SUM(Marketing_Cost) / COUNT(New_Customers)",
+          "Remark": "Lower CAC indicates more efficient customer acquisition."
+      },
+      {
+          "Category": "Customer Acquisition Cost",
+          "KPI": "Customer Acquisition Efficiency",
+          "Traduction": "Efficacité de l'Acquisition Client",
+          "Definition": "Measures the revenue generated from new customers compared to the cost of acquiring them.",
+          "Formula": "(Revenue from New Customers / CAC) * 100",
+          "Example": "$20,000 revenue, $10,000 CAC -> Efficiency = 200%",
+          "Excel": "=(SUM(Revenue) / SUM(CAC)) * 100",
+          "Remark": "Higher efficiency indicates better return on acquisition costs."
+      },
+      {
+          "Category": "Customer Acquisition Cost",
+          "KPI": "Cost per Lead",
+          "Traduction": "Coût par Lead",
+          "Definition": "Measures the cost to generate a lead.",
+          "Formula": "Total Lead Generation Cost / Number of Leads",
+          "Example": "$5,000 lead generation cost, 200 leads -> Cost per Lead = $25",
+          "Excel": "=SUM(Lead_Generation_Cost) / COUNT(Leads)",
+          "Remark": "Lower costs indicate more efficient lead generation."
+      },
+      {
+          "Category": "Customer Acquisition Cost",
+          "KPI": "Lifetime Value to CAC Ratio",
+          "Traduction": "Ratio Valeur Vie Client / Coût d'Acquisition Client",
+          "Definition": "Measures the ratio of the lifetime value of a customer to the cost of acquiring that customer.",
+          "Formula": "Customer Lifetime Value / CAC",
+          "Example": "$500 CLV, $100 CAC -> Ratio = 5",
+          "Excel": "=SUM(CLV) / SUM(CAC)",
+          "Remark": "Higher ratios indicate more valuable customers."
+      },
+      {
+          "Category": "Customer Acquisition Cost",
+          "KPI": "Marketing Qualified Leads (MQL)",
+          "Traduction": "Leads Qualifiés Marketing (MQL)",
+          "Definition": "Tracks the number of leads that have been deemed qualified by the marketing team.",
+          "Formula": "Number of MQLs Generated",
+          "Example": "50 MQLs generated -> MQLs = 50",
+          "Excel": "=COUNT(MQLs)",
+          "Remark": "Indicates the effectiveness of lead qualification."
+      }
+  ],
+  "Brand Awareness": [
+      {
+          "Category": "Brand Awareness",
+          "KPI": "Brand Recall Rate",
+          "Traduction": "Taux de Rappel de la Marque",
+          "Definition": "Measures the percentage of respondents who recall the brand without prompting.",
+          "Formula": "(Number of Respondents who Recall the Brand / Total Respondents) * 100",
+          "Example": "200 recall the brand, 500 total respondents -> Recall Rate = 40%",
+          "Excel": "=(COUNT(Brand_Recall) / COUNT(Total_Respondents)) * 100",
+          "Remark": "Higher rates indicate stronger brand presence."
+      },
+      {
+          "Category": "Brand Awareness",
+          "KPI": "Brand Reach",
+          "Traduction": "Portée de la Marque",
+          "Definition": "Measures the number of unique individuals exposed to the brand.",
+          "Formula": "Number of Unique Individuals Exposed to the Brand",
+          "Example": "10,000 individuals exposed -> Brand Reach = 10,000",
+          "Excel": "=COUNT(Unique_Individuals)",
+          "Remark": "Higher reach indicates greater brand awareness."
+      },
+      {
+          "Category": "Brand Awareness",
+          "KPI": "Social Media Mentions",
+          "Traduction": "Mentions sur les Réseaux Sociaux",
+          "Definition": "Tracks the number of times the brand is mentioned on social media.",
+          "Formula": "Number of Brand Mentions on Social Media",
+          "Example": "500 mentions -> Social Media Mentions = 500",
+          "Excel": "=COUNT(Social_Media_Mentions)",
+          "Remark": "Indicates the brand's social media presence."
+      },
+      {
+          "Category": "Brand Awareness",
+          "KPI": "Share of Voice",
+          "Traduction": "Part de Voix",
+          "Definition": "Measures the brand's share of total industry mentions.",
+          "Formula": "(Brand Mentions / Total Mentions in Industry) * 100",
+          "Example": "500 brand mentions, 5,000 industry mentions -> Share of Voice = 10%",
+          "Excel": "=(COUNT(Brand_Mentions) / COUNT(Industry_Mentions)) * 100",
+          "Remark": "Higher share indicates stronger brand dominance."
+      },
+      {
+          "Category": "Brand Awareness",
+          "KPI": "Brand Sentiment",
+          "Traduction": "Sentiment de la Marque",
+          "Definition": "Measures the sentiment of mentions about the brand, whether positive or negative.",
+          "Formula": "(Positive Mentions - Negative Mentions) / Total Mentions",
+          "Example": "300 positive, 100 negative, 500 total mentions -> Sentiment = 40%",
+          "Excel": "=(COUNT(Positive_Mentions) - COUNT(Negative_Mentions)) / COUNT(Total_Mentions)",
+          "Remark": "Positive sentiment indicates a favorable brand perception."
+      }
+  ]
 }

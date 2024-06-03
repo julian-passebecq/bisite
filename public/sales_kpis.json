@@ -1,36 +1,262 @@
 {
   "Sales Order Management": [
-    { "Name": "Total Sales Orders", "Description": "Tracks the status and performance of sales orders", "CalculationMethod": "Sum of all sales orders processed", "Example": "Total sales orders = 100", "Formula": "Sum of all Sales Orders Processed" },
-    { "Name": "Order Cycle Time", "Description": "Tracks order cycle time", "CalculationMethod": "Order cycle time = Total time to fulfill orders / Total orders", "Example": "Total time = 500 hours, Total orders = 100, Cycle time = 5 hours/order", "Formula": "Total Time to Fulfill Orders / Total Orders" },
-    { "Name": "Order Fill Rate", "Description": "Measures order fill rate", "CalculationMethod": "Order fill rate = (Orders fulfilled completely / Total orders) * 100", "Example": "Orders fulfilled completely = 90, Total orders = 100, Fill rate = 90%", "Formula": "(Orders Fulfilled Completely / Total Orders) * 100" },
-    { "Name": "Order Backlog", "Description": "Tracks order backlog", "CalculationMethod": "Order backlog = Total unfulfilled orders", "Example": "Order backlog = 10", "Formula": "Total Unfulfilled Orders" }
+    {
+      "Category": "Sales Order Management",
+      "KPI": "Total Sales Orders",
+      "Traduction": "Total des Commandes de Vente",
+      "Definition": "Tracks the total number of sales orders processed within a given period.",
+      "Formula": "Sum of all Sales Orders Processed",
+      "Example": "100 sales orders processed -> Total Sales Orders = 100",
+      "Excel": "=SUM(Sales_Orders)",
+      "Remark": "Helps in tracking sales activity."
+    },
+    {
+      "Category": "Sales Order Management",
+      "KPI": "Order Accuracy Rate",
+      "Traduction": "Taux de Précision des Commandes",
+      "Definition": "Measures the accuracy of sales orders processed without errors.",
+      "Formula": "(Accurate Orders / Total Orders) * 100",
+      "Example": "95 accurate orders out of 100 total orders -> Order Accuracy Rate = 95%",
+      "Excel": "=(Accurate_Orders / Total_Orders) * 100",
+      "Remark": "Indicates the efficiency of order processing."
+    },
+    {
+      "Category": "Sales Order Management",
+      "KPI": "Order Cycle Time",
+      "Traduction": "Délai de Traitement des Commandes",
+      "Definition": "Tracks the average time taken from order receipt to order delivery.",
+      "Formula": "Total Time to Fulfill Orders / Total Orders",
+      "Example": "500 hours to fulfill 100 orders -> Order Cycle Time = 5 hours/order",
+      "Excel": "=SUM(Time_to_Fulfill) / COUNT(Orders)",
+      "Remark": "Shorter cycle times indicate faster processing."
+    },
+    {
+      "Category": "Sales Order Management",
+      "KPI": "Order Fill Rate",
+      "Traduction": "Taux de Remplissage des Commandes",
+      "Definition": "Measures the percentage of customer orders that are fulfilled completely and on time.",
+      "Formula": "(Orders Fulfilled Completely / Total Orders) * 100",
+      "Example": "90 orders fulfilled completely out of 100 -> Order Fill Rate = 90%",
+      "Excel": "=(Fulfilled_Orders / Total_Orders) * 100",
+      "Remark": "High fill rates indicate good inventory management."
+    },
+    {
+      "Category": "Sales Order Management",
+      "KPI": "Order Backlog",
+      "Traduction": "Retard des Commandes",
+      "Definition": "Tracks the number of sales orders that have not been fulfilled within the expected time frame.",
+      "Formula": "Total Unfulfilled Orders",
+      "Example": "10 orders not fulfilled -> Order Backlog = 10",
+      "Excel": "=COUNT(Unfulfilled_Orders)",
+      "Remark": "Indicates potential issues in order processing."
+    }
   ],
   "Customer Relationship Management (CRM)": [
-    { "Name": "Total Interactions", "Description": "Tracks customer interactions and relationships", "CalculationMethod": "Number of interactions recorded", "Example": "Total interactions = 50", "Formula": "Number of Interactions Recorded" },
-    { "Name": "Customer Satisfaction Score (CSAT)", "Description": "Measures customer satisfaction", "CalculationMethod": "CSAT = Average score of customer surveys", "Example": "CSAT = 4.5/5", "Formula": "Average Score of Customer Surveys" },
-    { "Name": "Customer Retention Rate", "Description": "Tracks customer retention", "CalculationMethod": "Customer retention rate = (Customers retained / Total customers) * 100", "Example": "Customers retained = 80, Total customers = 100, Retention rate = 80%", "Formula": "(Customers Retained / Total Customers) * 100" },
-    { "Name": "Customer Lifetime Value (CLV)", "Description": "Measures customer lifetime value", "CalculationMethod": "CLV = Average purchase value * Purchase frequency * Customer lifespan", "Example": "Average purchase value = $100, Frequency = 4/year, Lifespan = 5 years, CLV = $2000", "Formula": "Average Purchase Value * Purchase Frequency * Customer Lifespan" },
-    { "Name": "Customer Acquisition Cost (CAC)", "Description": "Tracks customer acquisition cost", "CalculationMethod": "CAC = Total marketing expenses / New customers acquired", "Example": "Total marketing expenses = $10000, New customers = 50, CAC = $200", "Formula": "Total Marketing Expenses / New Customers Acquired" }
+    {
+      "Category": "Customer Relationship Management (CRM)",
+      "KPI": "Total Interactions",
+      "Traduction": "Total des Interactions",
+      "Definition": "Tracks the total number of interactions with customers, including calls, emails, and meetings.",
+      "Formula": "Number of Interactions Recorded",
+      "Example": "50 customer interactions recorded -> Total Interactions = 50",
+      "Excel": "=COUNT(Interactions)",
+      "Remark": "Important for assessing customer engagement."
+    },
+    {
+      "Category": "Customer Relationship Management (CRM)",
+      "KPI": "Customer Satisfaction Score (CSAT)",
+      "Traduction": "Score de Satisfaction Client (CSAT)",
+      "Definition": "Measures customer satisfaction based on survey responses.",
+      "Formula": "Average Score of Customer Surveys",
+      "Example": "Customer survey scores average 4.5/5 -> CSAT = 4.5",
+      "Excel": "=AVERAGE(Survey_Scores)",
+      "Remark": "High CSAT scores indicate satisfied customers."
+    },
+    {
+      "Category": "Customer Relationship Management (CRM)",
+      "KPI": "Customer Retention Rate",
+      "Traduction": "Taux de Rétention des Clients",
+      "Definition": "Tracks the percentage of customers who continue to do business with the company over a given period.",
+      "Formula": "(Customers Retained / Total Customers) * 100",
+      "Example": "80 customers retained out of 100 -> Retention Rate = 80%",
+      "Excel": "=(Retained_Customers / Total_Customers) * 100",
+      "Remark": "Higher retention rates indicate strong customer loyalty."
+    },
+    {
+      "Category": "Customer Relationship Management (CRM)",
+      "KPI": "Customer Lifetime Value (CLV)",
+      "Traduction": "Valeur Vie Client (CLV)",
+      "Definition": "Estimates the total revenue a business can expect from a single customer account.",
+      "Formula": "Average Purchase Value * Purchase Frequency * Customer Lifespan",
+      "Example": "$100 average purchase, 4 purchases/year, 5 years lifespan -> CLV = $2,000",
+      "Excel": "=AVERAGE(Purchase_Value) * AVERAGE(Purchase_Frequency) * Customer_Lifespan",
+      "Remark": "Helps in planning long-term customer strategies."
+    },
+    {
+      "Category": "Customer Relationship Management (CRM)",
+      "KPI": "Customer Acquisition Cost (CAC)",
+      "Traduction": "Coût d'Acquisition Client (CAC)",
+      "Definition": "Measures the cost associated with acquiring a new customer.",
+      "Formula": "Total Marketing Expenses / New Customers Acquired",
+      "Example": "$10,000 marketing expenses, 50 new customers -> CAC = $200",
+      "Excel": "=SUM(Marketing_Expenses) / COUNT(New_Customers)",
+      "Remark": "Lower CAC indicates more efficient marketing."
+    }
   ],
   "Sales Performance Analytics": [
-    { "Name": "Total Sales Revenue", "Description": "Tracks sales performance metrics", "CalculationMethod": "Sum of sales revenue", "Example": "Total sales revenue = $10000", "Formula": "Sum of Sales Revenue" },
-    { "Name": "Sales Growth Rate", "Description": "Measures sales growth", "CalculationMethod": "Sales growth rate = ((Current period sales - Previous period sales) / Previous period sales) * 100", "Example": "Current sales = $12000, Previous sales = $10000, Growth rate = 20%", "Formula": "((Current Period Sales - Previous Period Sales) / Previous Period Sales) * 100" },
-    { "Name": "Sales Target Achievement Rate", "Description": "Tracks sales target achievement", "CalculationMethod": "Sales target achievement rate = (Actual sales / Sales target) * 100", "Example": "Actual sales = $15000, Sales target = $20000, Achievement rate = 75%", "Formula": "(Actual Sales / Sales Target) * 100" },
-    { "Name": "Average Deal Size", "Description": "Measures average deal size", "CalculationMethod": "Average deal size = Total sales value / Number of deals", "Example": "Total sales value = $50000, Number of deals = 50, Average deal size = $1000", "Formula": "Total Sales Value / Number of Deals" },
-    { "Name": "Sales Pipeline Value", "Description": "Tracks sales pipeline", "CalculationMethod": "Pipeline value = Sum of all potential sales opportunities", "Example": "Pipeline value = $30000", "Formula": "Sum of All Potential Sales Opportunities" }
+    {
+      "Category": "Sales Performance Analytics",
+      "KPI": "Total Sales Revenue",
+      "Traduction": "Revenu Total des Ventes",
+      "Definition": "Tracks the total revenue generated from sales over a specific period.",
+      "Formula": "Sum of Sales Revenue",
+      "Example": "$100,000 sales revenue -> Total Sales Revenue = $100,000",
+      "Excel": "=SUM(Sales_Revenue)",
+      "Remark": "Primary measure of sales performance."
+    },
+    {
+      "Category": "Sales Performance Analytics",
+      "KPI": "Sales Growth Rate",
+      "Traduction": "Taux de Croissance des Ventes",
+      "Definition": "Measures the percentage increase in sales revenue over a specific period.",
+      "Formula": "((Current Period Sales - Previous Period Sales) / Previous Period Sales) * 100",
+      "Example": "$120,000 current sales, $100,000 previous sales -> Sales Growth Rate = 20%",
+      "Excel": "=((Current_Sales - Previous_Sales) / Previous_Sales) * 100",
+      "Remark": "High growth rates indicate increasing sales."
+    },
+    {
+      "Category": "Sales Performance Analytics",
+      "KPI": "Sales Target Achievement Rate",
+      "Traduction": "Taux d'Atteinte des Objectifs de Vente",
+      "Definition": "Tracks the percentage of sales targets achieved within a specific period.",
+      "Formula": "(Actual Sales / Sales Target) * 100",
+      "Example": "$150,000 actual sales, $200,000 sales target -> Achievement Rate = 75%",
+      "Excel": "=(Actual_Sales / Sales_Target) * 100",
+      "Remark": "Indicates success in meeting sales goals."
+    },
+    {
+      "Category": "Sales Performance Analytics",
+      "KPI": "Average Deal Size",
+      "Traduction": "Taille Moyenne des Transactions",
+      "Definition": "Measures the average revenue generated per sale.",
+      "Formula": "Total Sales Value / Number of Deals",
+      "Example": "$50,000 total sales value, 50 deals -> Average Deal Size = $1,000",
+      "Excel": "=SUM(Sales_Value) / COUNT(Deals)",
+      "Remark": "Helps in understanding the typical transaction size."
+    },
+    {
+      "Category": "Sales Performance Analytics",
+      "KPI": "Sales Pipeline Value",
+      "Traduction": "Valeur du Pipeline de Vente",
+      "Definition": "Tracks the total value of potential sales opportunities in the sales pipeline.",
+      "Formula": "Sum of All Potential Sales Opportunities",
+      "Example": "$300,000 pipeline value -> Sales Pipeline Value = $300,000",
+      "Excel": "=SUM(Potential_Sales_Opportunities)",
+      "Remark": "Helps in forecasting future sales."
+    }
   ],
   "Lead Management": [
-    { "Name": "Total Leads Converted", "Description": "Tracks the progress of sales leads", "CalculationMethod": "Number of leads converted", "Example": "Total leads converted = 20", "Formula": "Number of Leads Converted" },
-    { "Name": "Lead Conversion Rate", "Description": "Measures lead conversion rate", "CalculationMethod": "Lead conversion rate = (Leads converted / Total leads) * 100", "Example": "Leads converted = 20, Total leads = 100, Conversion rate = 20%", "Formula": "(Leads Converted / Total Leads) * 100" },
-    { "Name": "Average Lead Response Time", "Description": "Tracks lead response time", "CalculationMethod": "Average lead response time = Total response time / Number of leads", "Example": "Total response time = 200 hours, Number of leads = 50, Average response time = 4 hours", "Formula": "Total Response Time / Number of Leads" },
-    { "Name": "Cost per Lead", "Description": "Measures cost per lead", "CalculationMethod": "Cost per lead = Total marketing cost / Number of leads generated", "Example": "Total marketing cost = $5000, Number of leads = 100, Cost per lead = $50", "Formula": "Total Marketing Cost / Number of Leads Generated" },
-    { "Name": "Lead Nurturing Rate", "Description": "Tracks lead nurturing rate", "CalculationMethod": "Lead nurturing rate = (Nurtured leads / Total leads) * 100", "Example": "Nurtured leads = 30, Total leads = 100, Nurturing rate = 30%", "Formula": "(Nurtured Leads / Total Leads) * 100" }
+    {
+      "Category": "Lead Management",
+      "KPI": "Total Leads Converted",
+      "Traduction": "Total des Leads Convertis",
+      "Definition": "Tracks the number of leads that have been converted into customers.",
+      "Formula": "Number of Leads Converted",
+      "Example": "20 leads converted -> Total Leads Converted = 20",
+      "Excel": "=COUNT(Leads_Converted)",
+      "Remark": "Indicates effectiveness of the sales process."
+    },
+    {
+      "Category": "Lead Management",
+      "KPI": "Lead Conversion Rate",
+      "Traduction": "Taux de Conversion des Leads",
+      "Definition": "Measures the percentage of leads that are converted into customers.",
+      "Formula": "(Leads Converted / Total Leads) * 100",
+      "Example": "20 leads converted out of 100 -> Conversion Rate = 20%",
+      "Excel": "=(Leads_Converted / Total_Leads) * 100",
+      "Remark": "Higher conversion rates indicate better lead quality."
+    },
+    {
+      "Category": "Lead Management",
+      "KPI": "Average Lead Response Time",
+      "Traduction": "Temps de Réponse Moyen aux Leads",
+      "Definition": "Tracks the average time taken to respond to new leads.",
+      "Formula": "Total Response Time / Number of Leads",
+      "Example": "200 hours total response time, 50 leads -> Average Response Time = 4 hours",
+      "Excel": "=SUM(Response_Time) / COUNT(Leads)",
+      "Remark": "Shorter response times indicate better responsiveness."
+    },
+    {
+      "Category": "Lead Management",
+      "KPI": "Cost per Lead",
+      "Traduction": "Coût par Lead",
+      "Definition": "Measures the average cost to generate a lead.",
+      "Formula": "Total Marketing Cost / Number of Leads Generated",
+      "Example": "$5,000 marketing cost, 100 leads -> Cost per Lead = $50",
+      "Excel": "=SUM(Marketing_Cost) / COUNT(Leads)",
+      "Remark": "Lower costs per lead indicate more efficient marketing."
+    },
+    {
+      "Category": "Lead Management",
+      "KPI": "Lead Nurturing Rate",
+      "Traduction": "Taux de Nourrissement des Leads",
+      "Definition": "Tracks the percentage of leads that are nurtured through the sales process.",
+      "Formula": "(Nurtured Leads / Total Leads) * 100",
+      "Example": "30 nurtured leads out of 100 -> Nurturing Rate = 30%",
+      "Excel": "=(Nurtured_Leads / Total_Leads) * 100",
+      "Remark": "Indicates the effectiveness of lead nurturing strategies."
+    }
   ],
   "Quotation and Pricing": [
-    { "Name": "Total Quotations Issued", "Description": "Tracks the issuance and acceptance of sales quotations", "CalculationMethod": "Number of quotations issued", "Example": "Total quotations = 30", "Formula": "Number of Quotations Issued" },
-    { "Name": "Quotation Acceptance Rate", "Description": "Measures quotation acceptance rate", "CalculationMethod": "Quotation acceptance rate = (Accepted quotations / Total quotations) * 100", "Example": "Accepted quotations = 20, Total quotations = 30, Acceptance rate = 66.67%", "Formula": "(Accepted Quotations / Total Quotations) * 100" },
-    { "Name": "Average Quotation Value", "Description": "Tracks average quotation value", "CalculationMethod": "Average quotation value = Total value of quotations / Number of quotations", "Example": "Total value = $60000, Number of quotations = 30, Average value = $2000", "Formula": "Total Value of Quotations / Number of Quotations" },
-    { "Name": "Pricing Accuracy Rate", "Description": "Measures pricing accuracy", "CalculationMethod": "Pricing accuracy rate = (Accurate prices / Total quotations) * 100", "Example": "Accurate prices = 28, Total quotations = 30, Accuracy rate = 93.33%", "Formula": "(Accurate Prices / Total Quotations) * 100" },
-    { "Name": "Total Discount Offered", "Description": "Tracks discount offered", "CalculationMethod": "Total discount offered = Sum of all discounts given", "Example": "Total discount offered = $5000", "Formula": "Sum of All Discounts Given" }
+    {
+      "Category": "Quotation and Pricing",
+      "KPI": "Total Quotations Issued",
+      "Traduction": "Total des Devis Émis",
+      "Definition": "Tracks the total number of sales quotations issued to potential customers.",
+      "Formula": "Number of Quotations Issued",
+      "Example": "30 quotations issued -> Total Quotations Issued = 30",
+      "Excel": "=COUNT(Quotations_Issued)",
+      "Remark": "Helps in assessing sales activity."
+    },
+    {
+      "Category": "Quotation and Pricing",
+      "KPI": "Quotation Acceptance Rate",
+      "Traduction": "Taux d'Acceptation des Devis",
+      "Definition": "Measures the percentage of issued quotations that are accepted by customers.",
+      "Formula": "(Accepted Quotations / Total Quotations) * 100",
+      "Example": "20 accepted quotations out of 30 -> Acceptance Rate = 66.67%",
+      "Excel": "=(Accepted_Quotations / Total_Quotations) * 100",
+      "Remark": "Higher acceptance rates indicate competitive pricing."
+    },
+    {
+      "Category": "Quotation and Pricing",
+      "KPI": "Average Quotation Value",
+      "Traduction": "Valeur Moyenne des Devis",
+      "Definition": "Tracks the average value of sales quotations issued.",
+      "Formula": "Total Value of Quotations / Number of Quotations",
+      "Example": "$60,000 total value, 30 quotations -> Average Value = $2,000",
+      "Excel": "=SUM(Quotation_Value) / COUNT(Quotations)",
+      "Remark": "Helps in understanding typical deal size."
+    },
+    {
+      "Category": "Quotation and Pricing",
+      "KPI": "Pricing Accuracy Rate",
+      "Traduction": "Taux de Précision des Prix",
+      "Definition": "Measures the accuracy of pricing in issued quotations compared to final sales prices.",
+      "Formula": "(Accurate Prices / Total Quotations) * 100",
+      "Example": "28 accurate prices out of 30 -> Accuracy Rate = 93.33%",
+      "Excel": "=(Accurate_Prices / Total_Quotations) * 100",
+      "Remark": "Indicates the reliability of pricing strategies."
+    },
+    {
+      "Category": "Quotation and Pricing",
+      "KPI": "Total Discount Offered",
+      "Traduction": "Total des Remises Offertes",
+      "Definition": "Tracks the total value of discounts offered in sales quotations.",
+      "Formula": "Sum of All Discounts Given",
+      "Example": "$5,000 total discounts -> Total Discount Offered = $5,000",
+      "Excel": "=SUM(Discounts_Given)",
+      "Remark": "Helps in understanding discounting practices."
+    }
   ]
 }

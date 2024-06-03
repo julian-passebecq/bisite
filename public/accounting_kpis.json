@@ -1,37 +1,262 @@
 {
   "General Ledger": [
-    { "Name": "Total Debits and Credits", "Description": "Tracks all financial transactions", "CalculationMethod": "Sum of all debits and credits", "Example": "Total debits = $500, Total credits = $500", "Formula": "Total Debits + Total Credits" },
-    { "Name": "Net Income", "Description": "Measures overall financial health", "CalculationMethod": "Net income = Total revenue - Total expenses", "Example": "Total revenue = $10000, Total expenses = $8000, Net income = $2000", "Formula": "Total Revenue - Total Expenses" },
-    { "Name": "Equity", "Description": "Tracks equity changes", "CalculationMethod": "Equity = Assets - Liabilities", "Example": "Assets = $15000, Liabilities = $5000, Equity = $10000", "Formula": "Assets - Liabilities" },
-    { "Name": "Current Ratio", "Description": "Measures liquidity", "CalculationMethod": "Current ratio = Current assets / Current liabilities", "Example": "Current assets = $7000, Current liabilities = $3500, Current ratio = 2", "Formula": "Current Assets / Current Liabilities" },
-    { "Name": "Net Cash Flow", "Description": "Tracks cash flow", "CalculationMethod": "Net cash flow = Cash inflow - Cash outflow", "Example": "Cash inflow = $12000, Cash outflow = $9000, Net cash flow = $3000", "Formula": "Cash Inflow - Cash Outflow" }
+    {
+      "Category": "General Ledger",
+      "KPI": "Total Debits and Credits",
+      "Traduction": "Total des Débits et Crédits",
+      "Definition": "Tracks all financial transactions recorded in the general ledger.",
+      "Formula": "Total Debits + Total Credits",
+      "Example": "$10,000 debits, $10,000 credits -> Total Debit and credit = $20,000",
+      "Excel": "=SUM(Debits, Credits)",
+      "Remark": "Commonly used for basic financial tracking."
+    },
+    {
+      "Category": "General Ledger",
+      "KPI": "Net Income",
+      "Traduction": "Revenu Net",
+      "Definition": "Measures overall financial performance by calculating the difference between total revenue and total expenses.",
+      "Formula": "Total Revenue - Total Expenses",
+      "Example": "$50,000 revenue, $30,000 expenses -> Net Income = $20,000",
+      "Excel": "=SUM(Revenue) - SUM(Expenses)",
+      "Remark": "Key indicator of profitability."
+    },
+    {
+      "Category": "General Ledger",
+      "KPI": "Equity",
+      "Traduction": "Capitaux Propres",
+      "Definition": "Represents the owner's interest in the company, calculated as the difference between total assets and total liabilities.",
+      "Formula": "Assets - Liabilities",
+      "Example": "$100,000 assets, $60,000 liabilities -> Equity = $40,000",
+      "Excel": "=SUM(Assets) - SUM(Liabilities)",
+      "Remark": "Reflects the net value of the company."
+    },
+    {
+      "Category": "General Ledger",
+      "KPI": "Current Ratio",
+      "Traduction": "Ratio de Liquidité Générale",
+      "Definition": "Assesses a company's ability to pay short-term obligations with its short-term assets.",
+      "Formula": "Current Assets / Current Liabilities",
+      "Example": "$30,000 current assets, $15,000 current liabilities -> Current Ratio = 2",
+      "Excel": "=SUM(Current_Assets) / SUM(Current_Liabilities)",
+      "Remark": "Indicates liquidity; a ratio above 1 is typically good."
+    },
+    {
+      "Category": "General Ledger",
+      "KPI": "Net Cash Flow",
+      "Traduction": "Flux de Trésorerie Net",
+      "Definition": "Tracks the cash inflows and outflows over a specific period to determine the net increase or decrease in cash.",
+      "Formula": "Cash Inflow - Cash Outflow",
+      "Example": "$25,000 cash inflow, $10,000 cash outflow -> Net Cash Flow = $15,000",
+      "Excel": "=SUM(Cash_Inflow) - SUM(Cash_Outflow)",
+      "Remark": "Important for assessing cash management."
+    }
   ],
   "Accounts Payable": [
-    { "Name": "Total Payables", "Description": "Tracks money owed by the company", "CalculationMethod": "Sum of all outstanding payables", "Example": "Total payables = $2000", "Formula": "Sum of all Outstanding Payables" },
-    { "Name": "Days Payable Outstanding (DPO)", "Description": "Measures average payment period", "CalculationMethod": "DPO = (Accounts payable / Cost of goods sold) * Number of days", "Example": "Accounts payable = $10000, COGS = $60000, Days = 365, DPO = 60.83", "Formula": "(Accounts Payable / Cost of Goods Sold) * Number of Days" },
-    { "Name": "Percentage of Overdue Payables", "Description": "Tracks overdue payables", "CalculationMethod": "Percentage of overdue payables = (Overdue payables / Total payables) * 100", "Example": "Overdue payables = $500, Total payables = $2000, Percentage = 25%", "Formula": "(Overdue Payables / Total Payables) * 100" },
-    { "Name": "Payment Accuracy Rate", "Description": "Measures payment accuracy", "CalculationMethod": "Payment accuracy rate = (Accurate payments / Total payments) * 100", "Example": "Accurate payments = 98, Total payments = 100, Accuracy rate = 98%", "Formula": "(Accurate Payments / Total Payments) * 100" },
-    { "Name": "Early Payment Discount Savings", "Description": "Tracks early payment discounts", "CalculationMethod": "Early payment discount savings = Sum of all discounts received", "Example": "Discounts received = $300", "Formula": "Sum of all Discounts Received" }
+    {
+      "Category": "Accounts Payable",
+      "KPI": "Total Payables",
+      "Traduction": "Total des Créditeurs",
+      "Definition": "Represents the total amount of money owed by the company to its suppliers and creditors.",
+      "Formula": "Sum of all Outstanding Payables",
+      "Example": "$5,000 outstanding payables -> Total Payables = $5,000",
+      "Excel": "=SUM(Outstanding_Payables)",
+      "Remark": "Essential for managing company liabilities."
+    },
+    {
+      "Category": "Accounts Payable",
+      "KPI": "Days Payable Outstanding (DPO)",
+      "Traduction": "Délai Moyen de Paiement (DPO)",
+      "Definition": "Measures the average number of days the company takes to pay its suppliers.",
+      "Formula": "(Accounts Payable / Cost of Goods Sold) * Number of Days",
+      "Example": "$20,000 accounts payable, $100,000 COGS over 365 days -> DPO = 73 days",
+      "Excel": "=(Accounts_Payable / COGS) * 365",
+      "Remark": "Higher DPO indicates longer payment terms."
+    },
+    {
+      "Category": "Accounts Payable",
+      "KPI": "Percentage of Overdue Payables",
+      "Traduction": "Pourcentage des Créditeurs en Retard",
+      "Definition": "Indicates the proportion of accounts payable that are past due.",
+      "Formula": "(Overdue Payables / Total Payables) * 100",
+      "Example": "$2,000 overdue payables, $10,000 total payables -> Overdue Payables = 20%",
+      "Excel": "=(Overdue_Payables / Total_Payables) * 100",
+      "Remark": "High percentages indicate potential liquidity issues."
+    },
+    {
+      "Category": "Accounts Payable",
+      "KPI": "Payment Accuracy Rate",
+      "Traduction": "Taux de Précision des Paiements",
+      "Definition": "Measures the accuracy of payments made by the company, ensuring they are correct and on time.",
+      "Formula": "(Accurate Payments / Total Payments) * 100",
+      "Example": "95 accurate payments out of 100 total payments -> Accuracy Rate = 95%",
+      "Excel": "=(Accurate_Payments / Total_Payments) * 100",
+      "Remark": "Indicates the efficiency of the accounts payable process."
+    },
+    {
+      "Category": "Accounts Payable",
+      "KPI": "Early Payment Discount Savings",
+      "Traduction": "Économies de Remises pour Paiement Anticipé",
+      "Definition": "Tracks the savings generated from early payment discounts offered by suppliers.",
+      "Formula": "Sum of all Discounts Received",
+      "Example": "$500 in early payment discounts -> Savings = $500",
+      "Excel": "=SUM(Early_Payment_Discounts)",
+      "Remark": "Incentivizes early payments, improving supplier relations."
+    }
   ],
   "Accounts Receivable": [
-    { "Name": "Total Receivables", "Description": "Tracks money owed to the company", "CalculationMethod": "Sum of all outstanding receivables", "Example": "Total receivables = $3000", "Formula": "Sum of all Outstanding Receivables" },
-    { "Name": "Days Sales Outstanding (DSO)", "Description": "Measures collection period", "CalculationMethod": "DSO = (Accounts receivable / Total credit sales) * Number of days", "Example": "Accounts receivable = $8000, Credit sales = $96000, Days = 365, DSO = 30.42", "Formula": "(Accounts Receivable / Total Credit Sales) * Number of Days" },
-    { "Name": "Percentage of Overdue Receivables", "Description": "Tracks overdue receivables", "CalculationMethod": "Percentage of overdue receivables = (Overdue receivables / Total receivables) * 100", "Example": "Overdue receivables = $500, Total receivables = $3000, Percentage = 16.67%", "Formula": "(Overdue Receivables / Total Receivables) * 100" },
-    { "Name": "Collection Efficiency", "Description": "Measures collection efficiency", "CalculationMethod": "Collection efficiency = (Collected amount / Total receivables) * 100", "Example": "Collected amount = $2700, Total receivables = $3000, Efficiency = 90%", "Formula": "(Collected Amount / Total Receivables) * 100" },
-    { "Name": "Bad Debt Percentage", "Description": "Tracks bad debt", "CalculationMethod": "Bad debt percentage = (Bad debt / Total receivables) * 100", "Example": "Bad debt = $150, Total receivables = $3000, Percentage = 5%", "Formula": "(Bad Debt / Total Receivables) * 100" }
+    {
+      "Category": "Accounts Receivable",
+      "KPI": "Total Receivables",
+      "Traduction": "Total des Créances",
+      "Definition": "Represents the total amount of money owed to the company by its customers.",
+      "Formula": "Sum of all Outstanding Receivables",
+      "Example": "$10,000 outstanding receivables -> Total Receivables = $10,000",
+      "Excel": "=SUM(Outstanding_Receivables)",
+      "Remark": "Critical for cash flow management."
+    },
+    {
+      "Category": "Accounts Receivable",
+      "KPI": "Days Sales Outstanding (DSO)",
+      "Traduction": "Délai Moyen de Recouvrement (DSO)",
+      "Definition": "Measures the average number of days it takes for the company to collect payment after a sale has been made.",
+      "Formula": "(Accounts Receivable / Total Credit Sales) * Number of Days",
+      "Example": "$15,000 accounts receivable, $180,000 credit sales over 365 days -> DSO = 30 days",
+      "Excel": "=(Accounts_Receivable / Credit_Sales) * 365",
+      "Remark": "Shorter DSO indicates faster collections."
+    },
+    {
+      "Category": "Accounts Receivable",
+      "KPI": "Percentage of Overdue Receivables",
+      "Traduction": "Pourcentage des Créances en Retard",
+      "Definition": "Indicates the proportion of accounts receivable that are past due.",
+      "Formula": "(Overdue Receivables / Total Receivables) * 100",
+      "Example": "$1,000 overdue receivables, $10,000 total receivables -> Overdue Receivables = 10%",
+      "Excel": "=(Overdue_Receivables / Total_Receivables) * 100",
+      "Remark": "High percentages can signal collection issues."
+    },
+    {
+      "Category": "Accounts Receivable",
+      "KPI": "Collection Efficiency",
+      "Traduction": "Efficacité de Recouvrement",
+      "Definition": "Measures how effectively the company collects its receivables within the payment terms.",
+      "Formula": "(Collected Amount / Total Receivables) * 100",
+      "Example": "$8,000 collected out of $10,000 total receivables -> Collection Efficiency = 80%",
+      "Excel": "=(Collected_Amount / Total_Receivables) * 100",
+      "Remark": "Higher efficiency indicates better collection performance."
+    },
+    {
+      "Category": "Accounts Receivable",
+      "KPI": "Bad Debt Percentage",
+      "Traduction": "Pourcentage de Mauvaises Créances",
+      "Definition": "Tracks the proportion of receivables that are deemed uncollectible and written off as bad debt.",
+      "Formula": "(Bad Debt / Total Receivables) * 100",
+      "Example": "$500 bad debt out of $10,000 total receivables -> Bad Debt Percentage = 5%",
+      "Excel": "=(Bad_Debt / Total_Receivables) * 100",
+      "Remark": "Indicates the effectiveness of credit policies."
+    }
   ],
   "Fixed Assets": [
-    { "Name": "Net Book Value", "Description": "Tracks the value of fixed assets", "CalculationMethod": "Net book value = Cost - Accumulated depreciation", "Example": "Net book value = $10000 - $2000 = $8000", "Formula": "Cost - Accumulated Depreciation" },
-    { "Name": "Asset Turnover Ratio", "Description": "Measures asset utilization", "CalculationMethod": "Asset turnover ratio = Net sales / Average total assets", "Example": "Net sales = $50000, Average total assets = $25000, Turnover ratio = 2", "Formula": "Net Sales / Average Total Assets" },
-    { "Name": "Total Asset Acquisitions", "Description": "Tracks asset acquisition", "CalculationMethod": "Total asset acquisitions = Sum of all asset purchases", "Example": "Total asset acquisitions = $15000", "Formula": "Sum of all Asset Purchases" },
-    { "Name": "Depreciation Expense", "Description": "Measures depreciation expense", "CalculationMethod": "Depreciation expense = Total depreciation for the period", "Example": "Depreciation expense = $3000", "Formula": "Total Depreciation for the Period" },
-    { "Name": "Total Asset Disposals", "Description": "Tracks asset disposal", "CalculationMethod": "Total asset disposals = Sum of all asset sales", "Example": "Total asset disposals = $5000", "Formula": "Sum of all Asset Sales" }
+    {
+      "Category": "Fixed Assets",
+      "KPI": "Net Book Value",
+      "Traduction": "Valeur Comptable Nette",
+      "Definition": "Represents the value of fixed assets after accounting for depreciation.",
+      "Formula": "Cost - Accumulated Depreciation",
+      "Example": "$50,000 cost, $20,000 accumulated depreciation -> Net Book Value = $30,000",
+      "Excel": "=SUM(Cost) - SUM(Accumulated_Depreciation)",
+      "Remark": "Used for assessing the remaining value of assets."
+    },
+    {
+      "Category": "Fixed Assets",
+      "KPI": "Asset Turnover Ratio",
+      "Traduction": "Ratio de Rotation des Actifs",
+      "Definition": "Measures how efficiently a company uses its assets to generate sales.",
+      "Formula": "Net Sales / Average Total Assets",
+      "Example": "$200,000 net sales, $100,000 average total assets -> Asset Turnover Ratio = 2",
+      "Excel": "=SUM(Net_Sales) / AVERAGE(Total_Assets)",
+      "Remark": "Higher ratio indicates efficient asset use."
+    },
+    {
+      "Category": "Fixed Assets",
+      "KPI": "Total Asset Acquisitions",
+      "Traduction": "Total des Acquisitions d'Actifs",
+      "Definition": "Tracks the total value of assets acquired during a period.",
+      "Formula": "Sum of all Asset Purchases",
+      "Example": "$100,000 asset purchases -> Total Asset Acquisitions = $100,000",
+      "Excel": "=SUM(Asset_Purchases)",
+      "Remark": "Helps in tracking investment in assets."
+    },
+    {
+      "Category": "Fixed Assets",
+      "KPI": "Depreciation Expense",
+      "Traduction": "Charge d'Amortissement",
+      "Definition": "Represents the total depreciation expense recorded for a period.",
+      "Formula": "Total Depreciation for the Period",
+      "Example": "$5,000 depreciation expense -> Depreciation Expense = $5,000",
+      "Excel": "=SUM(Depreciation_Expense)",
+      "Remark": "Used to measure the allocation of asset cost."
+    },
+    {
+      "Category": "Fixed Assets",
+      "KPI": "Total Asset Disposals",
+      "Traduction": "Total des Cessions d'Actifs",
+      "Definition": "Tracks the total value of assets disposed of during a period.",
+      "Formula": "Sum of all Asset Sales",
+      "Example": "$50,000 asset sales -> Total Asset Disposals = $50,000",
+      "Excel": "=SUM(Asset_Sales)",
+      "Remark": "Useful for tracking divestitures."
+    }
   ],
   "Financial Reporting and Analysis": [
-    { "Name": "Net Profit", "Description": "Tracks financial performance through reports and analysis", "CalculationMethod": "Varies by report type", "Example": "Income statement shows a net profit of $5000", "Formula": "N/A" },
-    { "Name": "Gross Profit Margin", "Description": "Measures profitability", "CalculationMethod": "Gross profit margin = (Gross profit / Revenue) * 100", "Example": "Gross profit = $6000, Revenue = $10000, Margin = 60%", "Formula": "(Gross Profit / Revenue) * 100" },
-    { "Name": "Operating Expense Ratio", "Description": "Tracks operating expenses", "CalculationMethod": "Operating expense ratio = (Operating expenses / Revenue) * 100", "Example": "Operating expenses = $4000, Revenue = $10000, Ratio = 40%", "Formula": "(Operating Expenses / Revenue) * 100" },
-    { "Name": "Return on Assets (ROA)", "Description": "Measures return on assets", "CalculationMethod": "ROA = Net income / Total assets", "Example": "Net income = $2000, Total assets = $20000, ROA = 10%", "Formula": "Net Income / Total Assets" },
-    { "Name": "Earnings Before Interest and Taxes (EBIT)", "Description": "Tracks earnings before interest and taxes", "CalculationMethod": "EBIT = Revenue - Expenses (excluding interest and tax)", "Example": "Revenue = $10000, Expenses = $7000, EBIT = $3000", "Formula": "Revenue - Expenses (excluding interest and tax)" }
+    {
+      "Category": "Financial Reporting and Analysis",
+      "KPI": "Net Profit",
+      "Traduction": "Bénéfice Net",
+      "Definition": "Represents the overall profitability after all expenses have been deducted from total revenue.",
+      "Formula": "Total Revenue - Total Expenses",
+      "Example": "$100,000 revenue, $80,000 expenses -> Net Profit = $20,000",
+      "Excel": "=SUM(Revenue) - SUM(Expenses)",
+      "Remark": "Primary indicator of company profitability."
+    },
+    {
+      "Category": "Financial Reporting and Analysis",
+      "KPI": "Gross Profit Margin",
+      "Traduction": "Marge Brute",
+      "Definition": "Measures the proportion of revenue that exceeds the cost of goods sold.",
+      "Formula": "(Gross Profit / Revenue) * 100",
+      "Example": "$60,000 gross profit, $100,000 revenue -> Gross Profit Margin = 60%",
+      "Excel": "=(Gross_Profit / Revenue) * 100",
+      "Remark": "Indicates the efficiency of production."
+    },
+    {
+      "Category": "Financial Reporting and Analysis",
+      "KPI": "Operating Expense Ratio",
+      "Traduction": "Ratio des Charges d'Exploitation",
+      "Definition": "Tracks the ratio of operating expenses to revenue.",
+      "Formula": "(Operating Expenses / Revenue) * 100",
+      "Example": "$40,000 operating expenses, $100,000 revenue -> Operating Expense Ratio = 40%",
+      "Excel": "=(Operating_Expenses / Revenue) * 100",
+      "Remark": "Lower ratios indicate better efficiency."
+    },
+    {
+      "Category": "Financial Reporting and Analysis",
+      "KPI": "Return on Assets (ROA)",
+      "Traduction": "Rendement des Actifs",
+      "Definition": "Measures how efficiently a company uses its assets to generate profit.",
+      "Formula": "Net Income / Total Assets",
+      "Example": "$10,000 net income, $100,000 total assets -> ROA = 10%",
+      "Excel": "=SUM(Net_Income) / SUM(Total_Assets)",
+      "Remark": "Higher ROA indicates more efficient use of assets."
+    },
+    {
+      "Category": "Financial Reporting and Analysis",
+      "KPI": "Earnings Before Interest and Taxes (EBIT)",
+      "Traduction": "Résultat d'Exploitation",
+      "Definition": "Represents earnings before interest and taxes are deducted.",
+      "Formula": "Revenue - Expenses (excluding interest and tax)",
+      "Example": "$100,000 revenue, $70,000 expenses (excluding interest and tax) -> EBIT = $30,000",
+      "Excel": "=SUM(Revenue) - SUM(Expenses)",
+      "Remark": "Useful for comparing profitability across companies."
+    }
   ]
 }

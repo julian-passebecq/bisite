@@ -1,0 +1,158 @@
+{
+  "Inventory Management": [
+    {
+      "Category": "Inventory Management",
+      "KPI": "Inventory Turnover",
+      "Traduction": "Rotation des Stocks",
+      "Definition": "Measures how often inventory is sold and replaced over a period.",
+      "Formula": "Cost of Goods Sold / Average Inventory",
+      "Example": "$40,000 COGS, $10,000 average inventory -> Turnover = 4",
+      "Excel": "=SUM(COGS) / AVERAGE(Inventory)",
+      "Remark": "Higher turnover indicates efficient inventory management."
+    },
+    {
+      "Category": "Inventory Management",
+      "KPI": "Days Inventory Outstanding (DIO)",
+      "Traduction": "Durée Moyenne de Stockage (DIO)",
+      "Definition": "Measures the average number of days inventory is held before it is sold.",
+      "Formula": "(Average Inventory / Cost of Goods Sold) * Number of Days",
+      "Example": "$10,000 average inventory, $40,000 COGS, 365 days -> DIO = 91.25 days",
+      "Excel": "=(AVERAGE(Inventory) / SUM(COGS)) * 365",
+      "Remark": "Lower DIO indicates faster inventory turnover."
+    },
+    {
+      "Category": "Inventory Management",
+      "KPI": "Stockout Rate",
+      "Traduction": "Taux de Rupture de Stock",
+      "Definition": "Tracks the percentage of times inventory is not available when needed.",
+      "Formula": "(Number of Stockouts / Total Inventory Items) * 100",
+      "Example": "5 stockouts, 500 total items -> Stockout Rate = 1%",
+      "Excel": "=(COUNT(Stockouts) / COUNT(Inventory_Items)) * 100",
+      "Remark": "Lower rates indicate better inventory availability."
+    },
+    {
+      "Category": "Inventory Management",
+      "KPI": "Inventory Accuracy Rate",
+      "Traduction": "Taux de Précision des Stocks",
+      "Definition": "Measures the accuracy of inventory records compared to actual stock.",
+      "Formula": "(Accurate Inventory Count / Total Inventory Count) * 100",
+      "Example": "495 accurate counts, 500 total counts -> Accuracy Rate = 99%",
+      "Excel": "=(COUNT(Accurate_Counts) / COUNT(Inventory_Count)) * 100",
+      "Remark": "Higher rates indicate accurate inventory management."
+    },
+    {
+      "Category": "Inventory Management",
+      "KPI": "Carrying Cost of Inventory",
+      "Traduction": "Coût de Possession des Stocks",
+      "Definition": "Tracks the costs associated with holding inventory, including storage, insurance, and obsolescence.",
+      "Formula": "(Inventory Holding Cost / Average Inventory Value) * 100",
+      "Example": "$2,000 holding cost, $10,000 average inventory value -> Carrying Cost = 20%",
+      "Excel": "=(SUM(Holding_Cost) / AVERAGE(Inventory_Value)) * 100",
+      "Remark": "Lower carrying costs indicate efficient inventory management."
+    }
+  ],
+  "Supply Chain Efficiency": [
+    {
+      "Category": "Supply Chain Efficiency",
+      "KPI": "On-time Delivery Rate",
+      "Traduction": "Taux de Livraison à Temps",
+      "Definition": "Measures the percentage of orders delivered on or before the promised date.",
+      "Formula": "(Number of On-time Deliveries / Total Deliveries) * 100",
+      "Example": "95 on-time deliveries, 100 total deliveries -> On-time Delivery Rate = 95%",
+      "Excel": "=(COUNT(On_time_Deliveries) / COUNT(Total_Deliveries)) * 100",
+      "Remark": "High rates indicate reliable delivery performance."
+    },
+    {
+      "Category": "Supply Chain Efficiency",
+      "KPI": "Order Accuracy Rate",
+      "Traduction": "Taux de Précision des Commandes",
+      "Definition": "Measures the accuracy of order fulfillment without errors or discrepancies.",
+      "Formula": "(Accurate Orders / Total Orders) * 100",
+      "Example": "90 accurate orders, 100 total orders -> Accuracy Rate = 90%",
+      "Excel": "=(COUNT(Accurate_Orders) / COUNT(Total_Orders)) * 100",
+      "Remark": "High rates indicate efficient order processing."
+    },
+    {
+      "Category": "Supply Chain Efficiency",
+      "KPI": "Supply Chain Cycle Time",
+      "Traduction": "Temps de Cycle de la Chaîne d'Approvisionnement",
+      "Definition": "Tracks the total time from order placement to delivery.",
+      "Formula": "Total Time from Order to Delivery",
+      "Example": "15 days from order to delivery -> Cycle Time = 15 days",
+      "Excel": "=SUM(Time_from_Order_to_Delivery)",
+      "Remark": "Shorter cycle times indicate efficient supply chain processes."
+    },
+    {
+      "Category": "Supply Chain Efficiency",
+      "KPI": "Order Fulfillment Cycle Time",
+      "Traduction": "Temps de Cycle de Traitement des Commandes",
+      "Definition": "Measures the time taken from receiving an order to its delivery.",
+      "Formula": "Total Time from Order Receipt to Delivery",
+      "Example": "5 days from order receipt to delivery -> Fulfillment Cycle Time = 5 days",
+      "Excel": "=SUM(Time_from_Order_Receipt_to_Delivery)",
+      "Remark": "Shorter times indicate faster fulfillment processes."
+    },
+    {
+      "Category": "Supply Chain Efficiency",
+      "KPI": "Freight Cost per Unit",
+      "Traduction": "Coût de Transport par Unité",
+      "Definition": "Tracks the cost of shipping goods per unit.",
+      "Formula": "Total Freight Cost / Total Units Shipped",
+      "Example": "$5,000 freight cost, 1,000 units shipped -> Cost per Unit = $5",
+      "Excel": "=SUM(Freight_Cost) / COUNT(Units_Shipped)",
+      "Remark": "Lower costs indicate more efficient shipping."
+    }
+  ],
+  "Transportation Management": [
+    {
+      "Category": "Transportation Management",
+      "KPI": "On-time Pickup Rate",
+      "Traduction": "Taux de Ramassage à Temps",
+      "Definition": "Measures the percentage of pickups completed on or before the scheduled time.",
+      "Formula": "(Number of On-time Pickups / Total Pickups) * 100",
+      "Example": "90 on-time pickups, 100 total pickups -> On-time Pickup Rate = 90%",
+      "Excel": "=(COUNT(On_time_Pickups) / COUNT(Total_Pickups)) * 100",
+      "Remark": "High rates indicate reliable pickup performance."
+    },
+    {
+      "Category": "Transportation Management",
+      "KPI": "Transportation Cost per Mile",
+      "Traduction": "Coût de Transport par Mile",
+      "Definition": "Measures the cost of transportation per mile traveled.",
+      "Formula": "Total Transportation Cost / Total Miles",
+      "Example": "$20,000 transportation cost, 5,000 miles -> Cost per Mile = $4",
+      "Excel": "=SUM(Transportation_Cost) / SUM(Miles)",
+      "Remark": "Lower costs indicate efficient transportation management."
+    },
+    {
+      "Category": "Transportation Management",
+      "KPI": "Average Delivery Time",
+      "Traduction": "Temps de Livraison Moyen",
+      "Definition": "Tracks the average time taken to deliver goods.",
+      "Formula": "Total Delivery Time / Number of Deliveries",
+      "Example": "500 hours total delivery time, 100 deliveries -> Average Delivery Time = 5 hours",
+      "Excel": "=SUM(Delivery_Time) / COUNT(Deliveries)",
+      "Remark": "Shorter times indicate faster deliveries."
+    },
+    {
+      "Category": "Transportation Management",
+      "KPI": "Vehicle Utilization Rate",
+      "Traduction": "Taux d'Utilisation des Véhicules",
+      "Definition": "Measures the utilization of vehicles compared to their total capacity.",
+      "Formula": "(Actual Miles Driven / Total Available Miles) * 100",
+      "Example": "4,500 actual miles, 5,000 available miles -> Utilization Rate = 90%",
+      "Excel": "=(SUM(Actual_Miles) / SUM(Available_Miles)) * 100",
+      "Remark": "High rates indicate effective vehicle utilization."
+    },
+    {
+      "Category": "Transportation Management",
+      "KPI": "Damage Rate",
+      "Traduction": "Taux de Dommages",
+      "Definition": "Tracks the percentage of goods damaged during transportation.",
+      "Formula": "(Number of Damaged Goods / Total Goods Shipped) * 100",
+      "Example": "10 damaged goods, 1,000 goods shipped -> Damage Rate = 1%",
+      "Excel": "=(COUNT(Damaged_Goods) / COUNT(Goods_Shipped)) * 100",
+      "Remark": "Lower rates indicate better handling during transportation."
+    }
+  ]
+}

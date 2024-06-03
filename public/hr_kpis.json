@@ -1,0 +1,158 @@
+{
+  "Recruitment": [
+    {
+      "Category": "Recruitment",
+      "KPI": "Time to Hire",
+      "Traduction": "Temps d'Embauche",
+      "Definition": "Measures the average time taken to fill a vacant position.",
+      "Formula": "Total Days to Hire / Number of Hires",
+      "Example": "100 days to hire 5 people -> Time to Hire = 20 days",
+      "Excel": "=SUM(Days_to_Hire) / COUNT(Hires)",
+      "Remark": "Shorter times indicate a more efficient hiring process."
+    },
+    {
+      "Category": "Recruitment",
+      "KPI": "Cost per Hire",
+      "Traduction": "Coût par Embauche",
+      "Definition": "Tracks the average cost incurred to hire a new employee.",
+      "Formula": "Total Recruitment Cost / Number of Hires",
+      "Example": "$50,000 recruitment cost, 10 hires -> Cost per Hire = $5,000",
+      "Excel": "=SUM(Recruitment_Cost) / COUNT(Hires)",
+      "Remark": "Lower costs indicate a more efficient recruitment process."
+    },
+    {
+      "Category": "Recruitment",
+      "KPI": "Offer Acceptance Rate",
+      "Traduction": "Taux d'Acceptation des Offres",
+      "Definition": "Measures the percentage of job offers that are accepted by candidates.",
+      "Formula": "(Number of Offers Accepted / Total Offers Made) * 100",
+      "Example": "30 offers accepted out of 40 -> Acceptance Rate = 75%",
+      "Excel": "=(COUNT(Offers_Accepted) / COUNT(Total_Offers)) * 100",
+      "Remark": "High acceptance rates indicate attractive job offers."
+    },
+    {
+      "Category": "Recruitment",
+      "KPI": "New Hire Retention Rate",
+      "Traduction": "Taux de Rétention des Nouveaux Employés",
+      "Definition": "Tracks the percentage of new hires who stay with the company for a specified period.",
+      "Formula": "(Number of New Hires Retained / Total New Hires) * 100",
+      "Example": "45 out of 50 new hires retained -> Retention Rate = 90%",
+      "Excel": "=(COUNT(New_Hires_Retained) / COUNT(Total_New_Hires)) * 100",
+      "Remark": "High retention rates indicate successful onboarding."
+    },
+    {
+      "Category": "Recruitment",
+      "KPI": "Qualified Candidates per Hire",
+      "Traduction": "Candidats Qualifiés par Embauche",
+      "Definition": "Measures the average number of qualified candidates interviewed for each hire.",
+      "Formula": "Total Qualified Candidates / Number of Hires",
+      "Example": "40 qualified candidates for 10 hires -> 4 candidates per hire",
+      "Excel": "=SUM(Qualified_Candidates) / COUNT(Hires)",
+      "Remark": "Fewer candidates per hire indicate an efficient recruitment process."
+    }
+  ],
+  "Employee Satisfaction": [
+    {
+      "Category": "Employee Satisfaction",
+      "KPI": "Employee Satisfaction Score",
+      "Traduction": "Score de Satisfaction des Employés",
+      "Definition": "Measures overall employee satisfaction based on survey results.",
+      "Formula": "Average Satisfaction Score",
+      "Example": "Survey scores average 4.2/5 -> Satisfaction Score = 4.2",
+      "Excel": "=AVERAGE(Satisfaction_Scores)",
+      "Remark": "Higher scores indicate higher satisfaction levels."
+    },
+    {
+      "Category": "Employee Satisfaction",
+      "KPI": "Employee Net Promoter Score (eNPS)",
+      "Traduction": "Score Net Promoteur des Employés (eNPS)",
+      "Definition": "Measures employee loyalty and their likelihood to recommend the company as a good place to work.",
+      "Formula": "% Promoters - % Detractors",
+      "Example": "60% promoters, 20% detractors -> eNPS = 40",
+      "Excel": "=COUNT(Promoters) / COUNT(Employees) - COUNT(Detractors) / COUNT(Employees)",
+      "Remark": "Higher scores indicate more loyal employees."
+    },
+    {
+      "Category": "Employee Satisfaction",
+      "KPI": "Employee Turnover Rate",
+      "Traduction": "Taux de Rotation des Employés",
+      "Definition": "Measures the rate at which employees leave the company within a given period.",
+      "Formula": "(Number of Leavers / Average Number of Employees) * 100",
+      "Example": "5 leavers, 100 average employees -> Turnover Rate = 5%",
+      "Excel": "=(COUNT(Leavers) / AVERAGE(Employees)) * 100",
+      "Remark": "Lower rates indicate better employee retention."
+    },
+    {
+      "Category": "Employee Satisfaction",
+      "KPI": "Absenteeism Rate",
+      "Traduction": "Taux d'Absentéisme",
+      "Definition": "Tracks the percentage of workdays missed due to employee absence.",
+      "Formula": "(Total Days Absent / Total Workdays) * 100",
+      "Example": "100 days absent, 10,000 workdays -> Absenteeism Rate = 1%",
+      "Excel": "=(SUM(Days_Absent) / SUM(Workdays)) * 100",
+      "Remark": "Lower rates indicate better attendance."
+    },
+    {
+      "Category": "Employee Satisfaction",
+      "KPI": "Internal Promotion Rate",
+      "Traduction": "Taux de Promotion Interne",
+      "Definition": "Measures the percentage of job openings filled by internal candidates.",
+      "Formula": "(Internal Promotions / Total Promotions) * 100",
+      "Example": "15 internal promotions, 20 total promotions -> Internal Promotion Rate = 75%",
+      "Excel": "=(COUNT(Internal_Promotions) / COUNT(Total_Promotions)) * 100",
+      "Remark": "Higher rates indicate good career development opportunities."
+    }
+  ],
+  "Training and Development": [
+    {
+      "Category": "Training and Development",
+      "KPI": "Training Hours per Employee",
+      "Traduction": "Heures de Formation par Employé",
+      "Definition": "Measures the average number of training hours provided per employee.",
+      "Formula": "Total Training Hours / Total Employees",
+      "Example": "1,000 training hours, 50 employees -> Training Hours per Employee = 20",
+      "Excel": "=SUM(Training_Hours) / COUNT(Employees)",
+      "Remark": "More training hours indicate greater investment in development."
+    },
+    {
+      "Category": "Training and Development",
+      "KPI": "Training Completion Rate",
+      "Traduction": "Taux d'Achèvement de la Formation",
+      "Definition": "Measures the percentage of training programs completed by employees.",
+      "Formula": "(Completed Training Programs / Total Training Programs) * 100",
+      "Example": "45 completed programs, 50 total programs -> Completion Rate = 90%",
+      "Excel": "=(COUNT(Completed_Programs) / COUNT(Total_Programs)) * 100",
+      "Remark": "High rates indicate effective training engagement."
+    },
+    {
+      "Category": "Training and Development",
+      "KPI": "Employee Development Plan Rate",
+      "Traduction": "Taux de Plan de Développement des Employés",
+      "Definition": "Measures the percentage of employees with active development plans.",
+      "Formula": "(Employees with Development Plans / Total Employees) * 100",
+      "Example": "40 employees with plans, 50 total employees -> Plan Rate = 80%",
+      "Excel": "=(COUNT(Employees_with_Plans) / COUNT(Employees)) * 100",
+      "Remark": "Higher rates indicate a focus on employee development."
+    },
+    {
+      "Category": "Training and Development",
+      "KPI": "Post-training Performance Improvement",
+      "Traduction": "Amélioration des Performances après Formation",
+      "Definition": "Measures the improvement in employee performance following training.",
+      "Formula": "Pre-training Performance - Post-training Performance",
+      "Example": "Pre-training score 70, post-training score 85 -> Improvement = 15",
+      "Excel": "=SUM(Post_training_Performance) - SUM(Pre_training_Performance)",
+      "Remark": "Significant improvements indicate effective training."
+    },
+    {
+      "Category": "Training and Development",
+      "KPI": "Training Investment per Employee",
+      "Traduction": "Investissement en Formation par Employé",
+      "Definition": "Tracks the average monetary investment in training per employee.",
+      "Formula": "Total Training Investment / Total Employees",
+      "Example": "$50,000 training investment, 100 employees -> Investment per Employee = $500",
+      "Excel": "=SUM(Training_Investment) / COUNT(Employees)",
+      "Remark": "Higher investments indicate a commitment to employee growth."
+    }
+  ]
+}

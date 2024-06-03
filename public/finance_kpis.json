@@ -1,24 +1,158 @@
 {
   "Budget Management": [
-    { "Name": "Budget Variance", "Description": "Tracks adherence to budget", "CalculationMethod": "Budget variance = Actual spending - Budgeted amount", "Example": "Actual spending = $9000, Budgeted amount = $10000, Variance = -$1000", "Formula": "Actual Spending - Budgeted Amount" },
-    { "Name": "Budget Utilization Rate", "Description": "Measures budget utilization", "CalculationMethod": "Budget utilization rate = (Actual spending / Budgeted amount) * 100", "Example": "Actual spending = $9000, Budgeted amount = $10000, Utilization rate = 90%", "Formula": "(Actual Spending / Budgeted Amount) * 100" },
-    { "Name": "Percentage of Budget Overrun", "Description": "Tracks budget overruns", "CalculationMethod": "Percentage of budget overrun = (Overrun amount / Budgeted amount) * 100", "Example": "Overrun amount = $2000, Budgeted amount = $10000, Percentage = 20%", "Formula": "(Overrun Amount / Budgeted Amount) * 100" },
-    { "Name": "Budget Compliance Rate", "Description": "Measures budget compliance", "CalculationMethod": "Budget compliance rate = (Compliant expenditures / Total expenditures) * 100", "Example": "Compliant expenditures = $9500, Total expenditures = $10000, Compliance rate = 95%", "Formula": "(Compliant Expenditures / Total Expenditures) * 100" },
-
+    {
+      "Category": "Budget Management",
+      "KPI": "Budget Variance",
+      "Traduction": "Écart Budgétaire",
+      "Definition": "Tracks the difference between the actual spending and the budgeted amount.",
+      "Formula": "Actual Spending - Budgeted Amount",
+      "Example": "$9,000 actual spending, $10,000 budgeted -> Variance = -$1,000",
+      "Excel": "=SUM(Actual_Spending) - SUM(Budgeted_Amount)",
+      "Remark": "Negative variance indicates overspending."
+    },
+    {
+      "Category": "Budget Management",
+      "KPI": "Budget Utilization Rate",
+      "Traduction": "Taux d'Utilisation du Budget",
+      "Definition": "Measures how much of the budget has been used over a period.",
+      "Formula": "(Actual Spending / Budgeted Amount) * 100",
+      "Example": "$9,000 actual spending, $10,000 budgeted -> Utilization Rate = 90%",
+      "Excel": "=(SUM(Actual_Spending) / SUM(Budgeted_Amount)) * 100",
+      "Remark": "High rates may indicate efficient budget use."
+    },
+    {
+      "Category": "Budget Management",
+      "KPI": "Percentage of Budget Overrun",
+      "Traduction": "Pourcentage de Dépassement du Budget",
+      "Definition": "Tracks the percentage by which actual spending exceeds the budget.",
+      "Formula": "(Overrun Amount / Budgeted Amount) * 100",
+      "Example": "$2,000 overrun, $10,000 budgeted -> Overrun = 20%",
+      "Excel": "=(Overrun_Amount / Budgeted_Amount) * 100",
+      "Remark": "Used to monitor budget control."
+    },
+    {
+      "Category": "Budget Management",
+      "KPI": "Budget Compliance Rate",
+      "Traduction": "Taux de Conformité Budgétaire",
+      "Definition": "Measures the percentage of expenditures that are compliant with the budget.",
+      "Formula": "(Compliant Expenditures / Total Expenditures) * 100",
+      "Example": "$9,500 compliant expenditures, $10,000 total expenditures -> Compliance Rate = 95%",
+      "Excel": "=(Compliant_Expenditures / Total_Expenditures) * 100",
+      "Remark": "Indicates adherence to the budget."
+    },
+    {
+      "Category": "Budget Management",
+      "KPI": "Total Budget Adjustments",
+      "Traduction": "Total des Ajustements Budgétaires",
+      "Definition": "Tracks the total changes made to the budget over a period.",
+      "Formula": "Sum of All Budget Changes",
+      "Example": "$500 in budget adjustments -> Adjustments = $500",
+      "Excel": "=SUM(Budget_Adjustments)",
+      "Remark": "Frequent adjustments may indicate budget planning issues."
+    }
   ],
-      
-   “Cash Flow Management”: [
-  { "Name": "Net Cash Flow", "Description": "Tracks the inflow and outflow of cash", "CalculationMethod": "Net cash flow = Cash inflow - Cash outflow", "Example": "Cash inflow = $15000, Cash outflow = $10000, Net cash flow = $5000", "Formula": "Cash Inflow - Cash Outflow" },
-  { "Name": "Operating Cash Flow", "Description": "Measures operating cash flow", "CalculationMethod": "Operating cash flow = Cash generated from operations", "Example": "Operating cash flow = $12000", "Formula": "Cash Generated from Operations" },
-  { "Name": "Free Cash Flow", "Description": "Tracks free cash flow", "CalculationMethod": "Free cash flow = Operating cash flow - Capital expenditures", "Example": "Operating cash flow = $12000, Capital expenditures = $2000, Free cash flow = $10000", "Formula": "Operating Cash Flow - Capital Expenditures" },
-  { "Name": "Cash Flow Margin", "Description": "Measures cash flow margin", "CalculationMethod": "Cash flow margin = (Operating cash flow / Net sales) * 100", "Example": "Operating cash flow = $12000, Net sales = $40000, Cash flow margin = 30%", "Formula": "(Operating Cash Flow / Net Sales) * 100" },
-  { "Name": "Cash Conversion Cycle (CCC)", "Description": "Tracks cash conversion cycle", "CalculationMethod": "CCC = Days inventory outstanding + Days sales outstanding - Days payable outstanding", "Example": "DIO = 30, DSO = 45, DPO = 60, CCC = 15 days", "Formula": "DIO + DSO - DPO" }
-],
-"Investment Analysis": [
-{ "Name": "Return on Investment (ROI)", "Description": "Tracks the performance of investments", "CalculationMethod": "ROI = (Net profit / Investment cost) * 100", "Example": "Net profit = $5000, Investment cost = $20000, ROI = 25%", "Formula": "(Net Profit / Investment Cost) * 100" },
-{ "Name": "Payback Period", "Description": "Measures payback period", "CalculationMethod": "Payback period = Investment cost / Annual cash inflow", "Example": "Investment cost = $20000, Annual cash inflow = $5000, Payback period = 4 years", "Formula": "Investment Cost / Annual Cash Inflow" },
-{ "Name": "Net Present Value (NPV)", "Description": "Tracks net present value", "CalculationMethod": "NPV = Sum of present values of cash flows - Initial investment", "Example": "Present value of cash flows = $25000, Initial investment = $20000, NPV = $5000", "Formula": "Sum of Present Values of Cash Flows - Initial Investment" },
-{ "Name": "Internal Rate of Return (IRR)", "Description": "Measures internal rate of return", "CalculationMethod": "IRR = Discount rate that makes NPV = 0", "Example": "IRR = 15%", "Formula": "Discount Rate that makes NPV = 0" },
-{ "Name": "Profitability Index (PI)", "Description": "Tracks profitability index", "CalculationMethod": "PI = Present value of future cash flows / Initial investment", "Example": "Present value of future cash flows = $25000, Initial investment = $20000, PI = 1.25", "Formula": "Present Value of Future Cash Flows / Initial Investment" }
-]
+  "Cash Flow Management": [
+    {
+      "Category": "Cash Flow Management",
+      "KPI": "Net Cash Flow",
+      "Traduction": "Flux de Trésorerie Net",
+      "Definition": "Tracks the difference between cash inflows and outflows over a period.",
+      "Formula": "Cash Inflow - Cash Outflow",
+      "Example": "$15,000 cash inflow, $10,000 cash outflow -> Net Cash Flow = $5,000",
+      "Excel": "=SUM(Cash_Inflow) - SUM(Cash_Outflow)",
+      "Remark": "Positive cash flow indicates good liquidity."
+    },
+    {
+      "Category": "Cash Flow Management",
+      "KPI": "Operating Cash Flow",
+      "Traduction": "Flux de Trésorerie Opérationnel",
+      "Definition": "Measures the cash generated from core business operations.",
+      "Formula": "Cash Generated from Operations",
+      "Example": "$12,000 operating cash flow -> Operating Cash Flow = $12,000",
+      "Excel": "=SUM(Cash_Operations)",
+      "Remark": "Excludes non-operational cash flows."
+    },
+    {
+      "Category": "Cash Flow Management",
+      "KPI": "Free Cash Flow",
+      "Traduction": "Flux de Trésorerie Libre",
+      "Definition": "Tracks the cash available after capital expenditures.",
+      "Formula": "Operating Cash Flow - Capital Expenditures",
+      "Example": "$12,000 operating cash flow, $2,000 capex -> Free Cash Flow = $10,000",
+      "Excel": "=SUM(Operating_Cash_Flow) - SUM(Capex)",
+      "Remark": "Indicates cash available for expansion or dividends."
+    },
+    {
+      "Category": "Cash Flow Management",
+      "KPI": "Cash Flow Margin",
+      "Traduction": "Marge de Trésorerie",
+      "Definition": "Measures the cash generated from sales.",
+      "Formula": "(Operating Cash Flow / Net Sales) * 100",
+      "Example": "$12,000 operating cash flow, $40,000 net sales -> Cash Flow Margin = 30%",
+      "Excel": "=(SUM(Operating_Cash_Flow) / SUM(Net_Sales)) * 100",
+      "Remark": "Higher margins indicate efficient cash generation."
+    },
+    {
+      "Category": "Cash Flow Management",
+      "KPI": "Cash Conversion Cycle (CCC)",
+      "Traduction": "Cycle de Conversion de Trésorerie",
+      "Definition": "Tracks the time taken to convert inventory into cash.",
+      "Formula": "DIO + DSO - DPO",
+      "Example": "30 days DIO, 45 days DSO, 60 days DPO -> CCC = 15 days",
+      "Excel": "=SUM(DIO) + SUM(DSO) - SUM(DPO)",
+      "Remark": "Shorter cycles indicate faster cash conversion."
+    }
+  ],
+  "Investment Analysis": [
+    {
+      "Category": "Investment Analysis",
+      "KPI": "Return on Investment (ROI)",
+      "Traduction": "Retour sur Investissement (ROI)",
+      "Definition": "Measures the profitability of an investment.",
+      "Formula": "(Net Profit / Investment Cost) * 100",
+      "Example": "$5,000 net profit, $20,000 investment cost -> ROI = 25%",
+      "Excel": "=(SUM(Net_Profit) / SUM(Investment_Cost)) * 100",
+      "Remark": "Higher ROI indicates better returns."
+    },
+    {
+      "Category": "Investment Analysis",
+      "KPI": "Payback Period",
+      "Traduction": "Délai de Récupération",
+      "Definition": "Tracks the time taken to recover the initial investment.",
+      "Formula": "Investment Cost / Annual Cash Inflow",
+      "Example": "$20,000 investment cost, $5,000 annual cash inflow -> Payback Period = 4 years",
+      "Excel": "=SUM(Investment_Cost) / SUM(Annual_Cash_Inflow)",
+      "Remark": "Shorter periods indicate quicker recovery."
+    },
+    {
+      "Category": "Investment Analysis",
+      "KPI": "Net Present Value (NPV)",
+      "Traduction": "Valeur Actuelle Nette (VAN)",
+      "Definition": "Measures the profitability of an investment by calculating the difference between the present value of cash inflows and outflows.",
+      "Formula": "Sum of Present Values of Cash Flows - Initial Investment",
+      "Example": "$25,000 present value of cash flows, $20,000 initial investment -> NPV = $5,000",
+      "Excel": "=NPV(Discount_Rate, Cash_Flows) - Initial_Investment",
+      "Remark": "Positive NPV indicates a profitable investment."
+    },
+    {
+      "Category": "Investment Analysis",
+      "KPI": "Internal Rate of Return (IRR)",
+      "Traduction": "Taux de Rentabilité Interne (TRI)",
+      "Definition": "Measures the annualized rate of return on an investment.",
+      "Formula": "Discount Rate that makes NPV = 0",
+      "Example": "IRR = 15%",
+      "Excel": "=IRR(Cash_Flows)",
+      "Remark": "Higher IRR indicates better investment performance."
+    },
+    {
+      "Category": "Investment Analysis",
+      "KPI": "Profitability Index (PI)",
+      "Traduction": "Indice de Rentabilité (PI)",
+      "Definition": "Measures the profitability of an investment by dividing the present value of future cash flows by the initial investment.",
+      "Formula": "Present Value of Future Cash Flows / Initial Investment",
+      "Example": "$25,000 present value of future cash flows, $20,000 initial investment -> PI = 1.25",
+      "Excel": "=NPV(Discount_Rate, Cash_Flows) / Initial_Investment",
+      "Remark": "PI greater than 1 indicates a good investment."
+    }
+  ]
 }

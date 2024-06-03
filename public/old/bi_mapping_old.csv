@@ -1,0 +1,30 @@
+Category,Subnav,ERD available,URL
+Accounting,Accounts Payable,ERD: Centered on table 'VendTrans',https://alexdmeyer.com/ax2012erd/Erd-One-AcctPay-AP1-VendTrans.htm,vendtrans.png
+Accounting,Accounts Receivable,ERD: Centered on table 'CustTable',https://alexdmeyer.com/ax2012erd/Erd-One-AcctRecv-M1-CustTable.htm,custtable.png
+Accounting,Accounts Receivable,ERD: Centered on table 'CustTrans',https://alexdmeyer.com/ax2012erd/Erd-One-AcctRecv-M2-CustTrans.htm,custtrans.png
+Finance,Budgeting,ERD: Centered on table 'BudgetTransactionLine',https://alexdmeyer.com/ax2012erd/Erd-One-Budget-BUD1-BTransL.htm,budgettransactiononline.png
+Finance,Cash and Bank Management,ERD: Centered on table 'BankAccountTable',https://alexdmeyer.com/ax2012erd/Erd-One-CashBankMangt-B1-BAT.htm,bankaccounttable.png
+Finance,Cash and Bank Management,ERD: Centered on table 'BankAccountTable' with tables from other application modules,https://alexdmeyer.com/ax2012erd/Erd-One-CashBankMangt-B2-OtherAppMod.htm,bankaccounttable.png
+Project,Compliance and Internal Controls,ERD: Centered on table 'EMSSubstance',https://alexdmeyer.com/ax2012erd/Erd-One-ComplianceIntCtrl-CIC1-EMSSub.htm,emsub.png
+Finance,Fixed Assets,ERD: Centered on table 'AssetDepBook',https://alexdmeyer.com/ax2012erd/Erd-One-FixedAssets-FA1-ADepBook.htm,assetdeptbook.png
+Finance,Fixed Assets,ERD: Centered on table 'AssetBookTable',https://alexdmeyer.com/ax2012erd/Erd-One-FixedAssets-FA2-ABookTable.htm,assetbooktable.png
+Accounting,General Ledger,ERD: Centered on table 'GeneralJournalAccountEntry',https://alexdmeyer.com/ax2012erd/Erd-One-GenLed-L1-GJAE.htm,generaljournalaccountentry.png
+Human,Human Resources,ERD: Centered on table 'HcmBenefit',https://alexdmeyer.com/ax2012erd/Erd-One-HumanRes-HR1-HcmBenefits.htm,hcmbenefit.png
+Logistics,Inventory and Warehouse Management,ERD: Centered on table 'ShipCarrierShippingRequest',https://alexdmeyer.com/ax2012erd/Erd-One-InvenWareMangt-IWM1-ShCar.htm,shcar.png
+Logistics,Inventory and Warehouse Management,ERD: Centered on table 'InventDim',https://alexdmeyer.com/ax2012erd/Erd-One-InvenWareMangt-IWM2-InvDim.htm,invdim.png
+Logistics,Inventory and Warehouse Management,ERD: Centered on table 'InventTransOr',https://alexdmeyer.com/ax2012erd/Erd-One-InvenWareMangt-IWM3-InvTransOr.htm,invtransor.png
+Logistics,Procurement and Sourcing,ERD: Centered on table 'PurchLine',https://alexdmeyer.com/ax2012erd/Erd-One-ProcureSrc-PS1-PurchLine.htm,purchline.png
+Logistics,Procurement and Sourcing,ERD: Centered on table 'VendPackingSlipTrans',https://alexdmeyer.com/ax2012erd/Erd-One-ProcureSrc-PS2-PORJour.htm,porjour.png
+Logistics,Procurement and Sourcing,ERD: Centered on table 'PurchRFQTable',https://alexdmeyer.com/ax2012erd/Erd-One-ProcureSrc-PS3-RFQ.htm,rfq.png
+Logistics,Procurement and Sourcing,ERD: Centered on tables 'PurchReqTable' & 'PurchReqSourcingPolicyRule',https://alexdmeyer.com/ax2012erd/Erd-One-ProcureSrc-PS4-Req.htm,req.png
+Logistics,Procurement and Sourcing,ERD: Centered on tables 'SourceDocumentLine' & 'InventTransOrigin',https://alexdmeyer.com/ax2012erd/Erd-One-ProcureSrc-PS5-SrcDoc.htm,srcdoc.png
+Logistics,Production Control,ERD: Centered on table 'COSAllocation',https://alexdmeyer.com/ax2012erd/Erd-One-ProductionCtrl-PCn1-COSAlloc.htm,cosallocation.png
+Logistics,Production Control,ERD: Centered on table 'COSLedgerTable',https://alexdmeyer.com/ax2012erd/Erd-One-ProductionCtrl-PCn2-COSLedTab.htm,cosledgertable.png
+Project,Project Management and Accounting,ERD: Centered on table 'ProjEmplTrans',https://alexdmeyer.com/ax2012erd/Erd-One-ProjectMangtAccounting-PJ1-PET.htm,projempltrans.png
+Project,Project Management and Accounting,ERD: Centered on table 'ProjProposalJour',https://alexdmeyer.com/ax2012erd/Erd-One-ProjectMangtAccounting-PJ2-PPJ.htm,projproposaljour.png
+Project,Project Management and Accounting,ERD: Centered on table 'PSAActivitySetup',https://alexdmeyer.com/ax2012erd/Erd-One-ProjectMangtAccounting-PJ3-PSAAct.htm,psaactivitysetup.png
+Sales,Retail,ERD: Centered on table 'RetailTransactionTable',https://alexdmeyer.com/ax2012erd/Erd-One-Retail-R1-RTT.htm,retailtranstable.png
+Sales,Retail,ERD: Centered on table 'RetailStatementTable',https://alexdmeyer.com/ax2012erd/Erd-One-Retail-R2-RST.htm,retailstatementtable.png
+Sales,Sales and Marketing,ERD: Centered on table 'CustTable' surrounded by tables from other application modules,https://alexdmeyer.com/ax2012erd/Erd-One-SalesMarket-SMk1-CustMods.htm,custtable2.png
+Project,Service Management,ERD: Centered on table 'SMAAgreementTable',https://alexdmeyer.com/ax2012erd/Erd-One-ServiceMangt-SMA1-Agree.htm,smaagreement.png
+Human,Travel and Expense,ERD: Centered on table 'TrvExpTrans',https://alexdmeyer.com/ax2012erd/Erd-One-TravelExp-TREX58-TrvExpTrans.htm,trvexptrans.png

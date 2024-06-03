@@ -12,10 +12,6 @@ const SubNav: React.FC<SubNavProps> = ({ subCategories, onSubCategoryChange, act
         onSubCategoryChange(subCategory);
     };
 
-    if (activeSecondaryCategory !== "kpi") {
-        return null;
-    }
-
     return (
         <nav className="sub-nav">
             <ul className="sub-nav-list">

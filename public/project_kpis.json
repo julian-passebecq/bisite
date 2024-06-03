@@ -1,24 +1,158 @@
 {
   "Project Completion": [
-    { "Category": "Project Completion", "Definition": "Tracks the completion rate of projects", "CalculationMethod": "Completion rate = (Number of completed projects / Total projects) * 100", "Example": "Completed projects = 8, Total projects = 10, Completion rate = 80%" },
-    { "Category": "Project Completion", "Definition": "Measures project success rate", "CalculationMethod": "Success rate = (Number of successful projects / Total projects) * 100", "Example": "Successful projects = 7, Total projects = 10, Success rate = 70%" },
-    { "Category": "Project Completion", "Definition": "Tracks project delay rate", "CalculationMethod": "Delay rate = (Number of delayed projects / Total projects) * 100", "Example": "Delayed projects = 2, Total projects = 10, Delay rate = 20%" },
-    { "Category": "Project Completion", "Definition": "Measures project cancellation rate", "CalculationMethod": "Cancellation rate = (Number of cancelled projects / Total projects) * 100", "Example": "Cancelled projects = 1, Total projects = 10, Cancellation rate = 10%" },
-    { "Category": "Project Completion", "Definition": "Tracks on-budget projects", "CalculationMethod": "On-budget rate = (Number of on-budget projects / Total projects) * 100", "Example": "On-budget projects = 9, Total projects = 10, On-budget rate = 90%" }
+    {
+      "Category": "Project Completion",
+      "KPI": "Completion Rate",
+      "Traduction": "Taux d'Achèvement",
+      "Definition": "Measures the percentage of projects completed within a specified period.",
+      "Formula": "(Number of Completed Projects / Total Projects) * 100",
+      "Example": "8 completed projects, 10 total projects -> Completion Rate = 80%",
+      "Excel": "=(COUNT(Completed_Projects) / COUNT(Total_Projects)) * 100",
+      "Remark": "High rates indicate effective project management."
+    },
+    {
+      "Category": "Project Completion",
+      "KPI": "Project Success Rate",
+      "Traduction": "Taux de Réussite des Projets",
+      "Definition": "Measures the percentage of projects that meet their objectives and are considered successful.",
+      "Formula": "(Number of Successful Projects / Total Projects) * 100",
+      "Example": "7 successful projects, 10 total projects -> Success Rate = 70%",
+      "Excel": "=(COUNT(Successful_Projects) / COUNT(Total_Projects)) * 100",
+      "Remark": "Indicates the effectiveness of project execution."
+    },
+    {
+      "Category": "Project Completion",
+      "KPI": "Project Delay Rate",
+      "Traduction": "Taux de Retard des Projets",
+      "Definition": "Measures the percentage of projects that are delayed beyond their scheduled completion date.",
+      "Formula": "(Number of Delayed Projects / Total Projects) * 100",
+      "Example": "2 delayed projects, 10 total projects -> Delay Rate = 20%",
+      "Excel": "=(COUNT(Delayed_Projects) / COUNT(Total_Projects)) * 100",
+      "Remark": "High rates indicate potential project management issues."
+    },
+    {
+      "Category": "Project Completion",
+      "KPI": "Project Cancellation Rate",
+      "Traduction": "Taux d'Annulation des Projets",
+      "Definition": "Measures the percentage of projects that are cancelled before completion.",
+      "Formula": "(Number of Cancelled Projects / Total Projects) * 100",
+      "Example": "1 cancelled project, 10 total projects -> Cancellation Rate = 10%",
+      "Excel": "=(COUNT(Cancelled_Projects) / COUNT(Total_Projects)) * 100",
+      "Remark": "Indicates project viability issues."
+    },
+    {
+      "Category": "Project Completion",
+      "KPI": "On-budget Rate",
+      "Traduction": "Taux de Respect du Budget",
+      "Definition": "Measures the percentage of projects completed within the allocated budget.",
+      "Formula": "(Number of On-budget Projects / Total Projects) * 100",
+      "Example": "9 on-budget projects, 10 total projects -> On-budget Rate = 90%",
+      "Excel": "=(COUNT(On_budget_Projects) / COUNT(Total_Projects)) * 100",
+      "Remark": "Indicates financial discipline in project management."
+    }
   ],
   "Resource Utilization": [
-      { "Category": "Resource Utilization", "Definition": "Tracks the utilization of project resources", "CalculationMethod": "Utilization rate = (Actual hours worked / Available hours) * 100", "Example": "Actual hours worked = 1500, Available hours = 2000, Utilization rate = 75%" },
-      { "Category": "Resource Utilization", "Definition": "Measures resource efficiency", "CalculationMethod": "Resource efficiency = (Output / Total resources used) * 100", "Example": "Output = $30000, Resources used = $40000, Efficiency = 75%" },
-      { "Category": "Resource Utilization", "Definition": "Tracks resource allocation", "CalculationMethod": "Percentage of resources allocated to projects", "Example": "Resources allocated = 80, Total resources = 100, Allocation percentage = 80%" },
-      { "Category": "Resource Utilization", "Definition": "Tracks resource allocation", "CalculationMethod": "Percentage of resources allocated to projects", "Example": "Resources allocated = 80, Total resources = 100, Allocation percentage = 80%" },
-      { "Category": "Resource Utilization", "Definition": "Measures resource availability", "CalculationMethod": "Resource availability rate = (Available resources / Total resources) * 100", "Example": "Available resources = 90, Total resources = 100, Availability rate = 90%" },
-      { "Category": "Resource Utilization", "Definition": "Tracks resource turnover", "CalculationMethod": "Resource turnover rate = (Number of resources replaced / Total resources) * 100", "Example": "Resources replaced = 5, Total resources = 100, Turnover rate = 5%" }
+    {
+      "Category": "Resource Utilization",
+      "KPI": "Utilization Rate",
+      "Traduction": "Taux d'Utilisation",
+      "Definition": "Measures the percentage of available resources that are actively engaged in projects.",
+      "Formula": "(Actual Hours Worked / Available Hours) * 100",
+      "Example": "1,500 hours worked, 2,000 available hours -> Utilization Rate = 75%",
+      "Excel": "=(SUM(Actual_Hours) / SUM(Available_Hours)) * 100",
+      "Remark": "High rates indicate efficient resource utilization."
+    },
+    {
+      "Category": "Resource Utilization",
+      "KPI": "Resource Efficiency",
+      "Traduction": "Efficacité des Ressources",
+      "Definition": "Measures the output generated per unit of resource used.",
+      "Formula": "(Output / Total Resources Used) * 100",
+      "Example": "$30,000 output, $40,000 resources used -> Efficiency = 75%",
+      "Excel": "=(SUM(Output) / SUM(Resources_Used)) * 100",
+      "Remark": "Higher efficiency indicates better resource management."
+    },
+    {
+      "Category": "Resource Utilization",
+      "KPI": "Resource Allocation Percentage",
+      "Traduction": "Pourcentage d'Allocation des Ressources",
+      "Definition": "Measures the percentage of total resources allocated to projects.",
+      "Formula": "(Resources Allocated / Total Resources) * 100",
+      "Example": "80 resources allocated, 100 total resources -> Allocation Percentage = 80%",
+      "Excel": "=(SUM(Resources_Allocated) / SUM(Total_Resources)) * 100",
+      "Remark": "Indicates how resources are distributed across projects."
+    },
+    {
+      "Category": "Resource Utilization",
+      "KPI": "Resource Availability Rate",
+      "Traduction": "Taux de Disponibilité des Ressources",
+      "Definition": "Measures the percentage of resources that are available for project work.",
+      "Formula": "(Available Resources / Total Resources) * 100",
+      "Example": "90 available resources, 100 total resources -> Availability Rate = 90%",
+      "Excel": "=(SUM(Available_Resources) / SUM(Total_Resources)) * 100",
+      "Remark": "High rates indicate good resource planning."
+    },
+    {
+      "Category": "Resource Utilization",
+      "KPI": "Resource Turnover Rate",
+      "Traduction": "Taux de Rotation des Ressources",
+      "Definition": "Measures the percentage of resources replaced within a period.",
+      "Formula": "(Number of Resources Replaced / Total Resources) * 100",
+      "Example": "5 resources replaced, 100 total resources -> Turnover Rate = 5%",
+      "Excel": "=(SUM(Resources_Replaced) / SUM(Total_Resources)) * 100",
+      "Remark": "High turnover may indicate resource management issues."
+    }
   ],
   "Project Budget": [
-      { "Category": "Project Budget", "Definition": "Tracks the adherence to project budgets", "CalculationMethod": "Budget variance = Actual cost - Budgeted cost", "Example": "Actual cost = $9000, Budgeted cost = $10000, Variance = -$1000" },
-      { "Category": "Project Budget", "Definition": "Measures budget utilization", "CalculationMethod": "Budget utilization rate = (Actual spending / Budgeted amount) * 100", "Example": "Actual spending = $9000, Budgeted amount = $10000, Utilization rate = 90%" },
-      { "Category": "Project Budget", "Definition": "Tracks budget overruns", "CalculationMethod": "Percentage of budget overrun = (Overrun amount / Budgeted amount) * 100", "Example": "Overrun amount = $2000, Budgeted amount = $10000, Percentage = 20%" },
-      { "Category": "Project Budget", "Definition": "Measures budget compliance", "CalculationMethod": "Budget compliance rate = (Compliant expenditures / Total expenditures) * 100", "Example": "Compliant expenditures = $9500, Total expenditures = $10000, Compliance rate = 95%" },
-      { "Category": "Project Budget", "Definition": "Tracks budget adjustments", "CalculationMethod": "Total budget adjustments = Sum of all budget changes", "Example": "Total budget adjustments = $500" }
+    {
+      "Category": "Project Budget",
+      "KPI": "Budget Variance",
+      "Traduction": "Écart Budgétaire",
+      "Definition": "Tracks the difference between the actual cost and the budgeted cost of a project.",
+      "Formula": "Actual Cost - Budgeted Cost",
+      "Example": "$9,000 actual cost, $10,000 budgeted cost -> Variance = -$1,000",
+      "Excel": "=SUM(Actual_Cost) - SUM(Budgeted_Cost)",
+      "Remark": "Negative variance indicates overspending."
+    },
+    {
+      "Category": "Project Budget",
+      "KPI": "Budget Utilization Rate",
+      "Traduction": "Taux d'Utilisation du Budget",
+      "Definition": "Measures how much of the budget has been used over a period.",
+      "Formula": "(Actual Spending / Budgeted Amount) * 100",
+      "Example": "$9,000 actual spending, $10,000 budgeted -> Utilization Rate = 90%",
+      "Excel": "=(SUM(Actual_Spending) / SUM(Budgeted_Amount)) * 100",
+      "Remark": "High rates may indicate efficient budget use."
+    },
+    {
+      "Category": "Project Budget",
+      "KPI": "Percentage of Budget Overrun",
+      "Traduction": "Pourcentage de Dépassement du Budget",
+      "Definition": "Tracks the percentage by which actual spending exceeds the budget.",
+      "Formula": "(Overrun Amount / Budgeted Amount) * 100",
+      "Example": "$2,000 overrun, $10,000 budgeted -> Overrun = 20%",
+      "Excel": "=(SUM(Overrun_Amount) / SUM(Budgeted_Amount)) * 100",
+      "Remark": "Used to monitor budget control."
+    },
+    {
+      "Category": "Project Budget",
+      "KPI": "Budget Compliance Rate",
+      "Traduction": "Taux de Conformité Budgétaire",
+      "Definition": "Measures the percentage of expenditures that are compliant with the budget.",
+      "Formula": "(Compliant Expenditures / Total Expenditures) * 100",
+      "Example": "$9,500 compliant expenditures, $10,000 total expenditures -> Compliance Rate = 95%",
+      "Excel": "=(SUM(Compliant_Expenditures) / SUM(Total_Expenditures)) * 100",
+      "Remark": "Indicates adherence to the budget."
+    },
+    {
+      "Category": "Project Budget",
+      "KPI": "Total Budget Adjustments",
+      "Traduction": "Total des Ajustements Budgétaires",
+      "Definition": "Tracks the total changes made to the budget over a period.",
+      "Formula": "Sum of All Budget Changes",
+      "Example": "$500 in budget adjustments -> Adjustments = $500",
+      "Excel": "=SUM(Budget_Adjustments)",
+      "Remark": "Frequent adjustments may indicate budget planning issues."
+    }
   ]
 }
