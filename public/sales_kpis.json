@@ -1,17 +1,36 @@
 {
   "Sales Order Management": [
-    { "Category": "Sales Order Management", "Definition": "Tracks the status and performance of sales orders", "CalculationMethod": "Sum of all sales orders processed", "Example": "Example: Total sales orders = 100" }
+    { "Name": "Total Sales Orders", "Description": "Tracks the status and performance of sales orders", "CalculationMethod": "Sum of all sales orders processed", "Example": "Total sales orders = 100", "Formula": "Sum of all Sales Orders Processed" },
+    { "Name": "Order Cycle Time", "Description": "Tracks order cycle time", "CalculationMethod": "Order cycle time = Total time to fulfill orders / Total orders", "Example": "Total time = 500 hours, Total orders = 100, Cycle time = 5 hours/order", "Formula": "Total Time to Fulfill Orders / Total Orders" },
+    { "Name": "Order Fill Rate", "Description": "Measures order fill rate", "CalculationMethod": "Order fill rate = (Orders fulfilled completely / Total orders) * 100", "Example": "Orders fulfilled completely = 90, Total orders = 100, Fill rate = 90%", "Formula": "(Orders Fulfilled Completely / Total Orders) * 100" },
+    { "Name": "Order Backlog", "Description": "Tracks order backlog", "CalculationMethod": "Order backlog = Total unfulfilled orders", "Example": "Order backlog = 10", "Formula": "Total Unfulfilled Orders" }
   ],
   "Customer Relationship Management (CRM)": [
-    { "Category": "Customer Relationship Management (CRM)", "Definition": "Tracks customer interactions and relationships", "CalculationMethod": "Number of interactions recorded", "Example": "Example: Total interactions = 50" }
+    { "Name": "Total Interactions", "Description": "Tracks customer interactions and relationships", "CalculationMethod": "Number of interactions recorded", "Example": "Total interactions = 50", "Formula": "Number of Interactions Recorded" },
+    { "Name": "Customer Satisfaction Score (CSAT)", "Description": "Measures customer satisfaction", "CalculationMethod": "CSAT = Average score of customer surveys", "Example": "CSAT = 4.5/5", "Formula": "Average Score of Customer Surveys" },
+    { "Name": "Customer Retention Rate", "Description": "Tracks customer retention", "CalculationMethod": "Customer retention rate = (Customers retained / Total customers) * 100", "Example": "Customers retained = 80, Total customers = 100, Retention rate = 80%", "Formula": "(Customers Retained / Total Customers) * 100" },
+    { "Name": "Customer Lifetime Value (CLV)", "Description": "Measures customer lifetime value", "CalculationMethod": "CLV = Average purchase value * Purchase frequency * Customer lifespan", "Example": "Average purchase value = $100, Frequency = 4/year, Lifespan = 5 years, CLV = $2000", "Formula": "Average Purchase Value * Purchase Frequency * Customer Lifespan" },
+    { "Name": "Customer Acquisition Cost (CAC)", "Description": "Tracks customer acquisition cost", "CalculationMethod": "CAC = Total marketing expenses / New customers acquired", "Example": "Total marketing expenses = $10000, New customers = 50, CAC = $200", "Formula": "Total Marketing Expenses / New Customers Acquired" }
   ],
   "Sales Performance Analytics": [
-    { "Category": "Sales Performance Analytics", "Definition": "Tracks sales performance metrics", "CalculationMethod": "Sum of sales revenue", "Example": "Example: Total sales revenue = $10000" }
+    { "Name": "Total Sales Revenue", "Description": "Tracks sales performance metrics", "CalculationMethod": "Sum of sales revenue", "Example": "Total sales revenue = $10000", "Formula": "Sum of Sales Revenue" },
+    { "Name": "Sales Growth Rate", "Description": "Measures sales growth", "CalculationMethod": "Sales growth rate = ((Current period sales - Previous period sales) / Previous period sales) * 100", "Example": "Current sales = $12000, Previous sales = $10000, Growth rate = 20%", "Formula": "((Current Period Sales - Previous Period Sales) / Previous Period Sales) * 100" },
+    { "Name": "Sales Target Achievement Rate", "Description": "Tracks sales target achievement", "CalculationMethod": "Sales target achievement rate = (Actual sales / Sales target) * 100", "Example": "Actual sales = $15000, Sales target = $20000, Achievement rate = 75%", "Formula": "(Actual Sales / Sales Target) * 100" },
+    { "Name": "Average Deal Size", "Description": "Measures average deal size", "CalculationMethod": "Average deal size = Total sales value / Number of deals", "Example": "Total sales value = $50000, Number of deals = 50, Average deal size = $1000", "Formula": "Total Sales Value / Number of Deals" },
+    { "Name": "Sales Pipeline Value", "Description": "Tracks sales pipeline", "CalculationMethod": "Pipeline value = Sum of all potential sales opportunities", "Example": "Pipeline value = $30000", "Formula": "Sum of All Potential Sales Opportunities" }
   ],
   "Lead Management": [
-    { "Category": "Lead Management", "Definition": "Tracks the progress of sales leads", "CalculationMethod": "Number of leads converted", "Example": "Example: Total leads converted = 20" }
+    { "Name": "Total Leads Converted", "Description": "Tracks the progress of sales leads", "CalculationMethod": "Number of leads converted", "Example": "Total leads converted = 20", "Formula": "Number of Leads Converted" },
+    { "Name": "Lead Conversion Rate", "Description": "Measures lead conversion rate", "CalculationMethod": "Lead conversion rate = (Leads converted / Total leads) * 100", "Example": "Leads converted = 20, Total leads = 100, Conversion rate = 20%", "Formula": "(Leads Converted / Total Leads) * 100" },
+    { "Name": "Average Lead Response Time", "Description": "Tracks lead response time", "CalculationMethod": "Average lead response time = Total response time / Number of leads", "Example": "Total response time = 200 hours, Number of leads = 50, Average response time = 4 hours", "Formula": "Total Response Time / Number of Leads" },
+    { "Name": "Cost per Lead", "Description": "Measures cost per lead", "CalculationMethod": "Cost per lead = Total marketing cost / Number of leads generated", "Example": "Total marketing cost = $5000, Number of leads = 100, Cost per lead = $50", "Formula": "Total Marketing Cost / Number of Leads Generated" },
+    { "Name": "Lead Nurturing Rate", "Description": "Tracks lead nurturing rate", "CalculationMethod": "Lead nurturing rate = (Nurtured leads / Total leads) * 100", "Example": "Nurtured leads = 30, Total leads = 100, Nurturing rate = 30%", "Formula": "(Nurtured Leads / Total Leads) * 100" }
   ],
   "Quotation and Pricing": [
-    { "Category": "Quotation and Pricing", "Definition": "Tracks the issuance and acceptance of sales quotations", "CalculationMethod": "Number of quotations issued", "Example": "Example: Total quotations = 30" }
+    { "Name": "Total Quotations Issued", "Description": "Tracks the issuance and acceptance of sales quotations", "CalculationMethod": "Number of quotations issued", "Example": "Total quotations = 30", "Formula": "Number of Quotations Issued" },
+    { "Name": "Quotation Acceptance Rate", "Description": "Measures quotation acceptance rate", "CalculationMethod": "Quotation acceptance rate = (Accepted quotations / Total quotations) * 100", "Example": "Accepted quotations = 20, Total quotations = 30, Acceptance rate = 66.67%", "Formula": "(Accepted Quotations / Total Quotations) * 100" },
+    { "Name": "Average Quotation Value", "Description": "Tracks average quotation value", "CalculationMethod": "Average quotation value = Total value of quotations / Number of quotations", "Example": "Total value = $60000, Number of quotations = 30, Average value = $2000", "Formula": "Total Value of Quotations / Number of Quotations" },
+    { "Name": "Pricing Accuracy Rate", "Description": "Measures pricing accuracy", "CalculationMethod": "Pricing accuracy rate = (Accurate prices / Total quotations) * 100", "Example": "Accurate prices = 28, Total quotations = 30, Accuracy rate = 93.33%", "Formula": "(Accurate Prices / Total Quotations) * 100" },
+    { "Name": "Total Discount Offered", "Description": "Tracks discount offered", "CalculationMethod": "Total discount offered = Sum of all discounts given", "Example": "Total discount offered = $5000", "Formula": "Sum of All Discounts Given" }
   ]
 }

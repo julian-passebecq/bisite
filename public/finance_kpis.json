@@ -1,0 +1,24 @@
+{
+  "Budget Management": [
+    { "Name": "Budget Variance", "Description": "Tracks adherence to budget", "CalculationMethod": "Budget variance = Actual spending - Budgeted amount", "Example": "Actual spending = $9000, Budgeted amount = $10000, Variance = -$1000", "Formula": "Actual Spending - Budgeted Amount" },
+    { "Name": "Budget Utilization Rate", "Description": "Measures budget utilization", "CalculationMethod": "Budget utilization rate = (Actual spending / Budgeted amount) * 100", "Example": "Actual spending = $9000, Budgeted amount = $10000, Utilization rate = 90%", "Formula": "(Actual Spending / Budgeted Amount) * 100" },
+    { "Name": "Percentage of Budget Overrun", "Description": "Tracks budget overruns", "CalculationMethod": "Percentage of budget overrun = (Overrun amount / Budgeted amount) * 100", "Example": "Overrun amount = $2000, Budgeted amount = $10000, Percentage = 20%", "Formula": "(Overrun Amount / Budgeted Amount) * 100" },
+    { "Name": "Budget Compliance Rate", "Description": "Measures budget compliance", "CalculationMethod": "Budget compliance rate = (Compliant expenditures / Total expenditures) * 100", "Example": "Compliant expenditures = $9500, Total expenditures = $10000, Compliance rate = 95%", "Formula": "(Compliant Expenditures / Total Expenditures) * 100" },
+
+  ],
+      
+   “Cash Flow Management”: [
+  { "Name": "Net Cash Flow", "Description": "Tracks the inflow and outflow of cash", "CalculationMethod": "Net cash flow = Cash inflow - Cash outflow", "Example": "Cash inflow = $15000, Cash outflow = $10000, Net cash flow = $5000", "Formula": "Cash Inflow - Cash Outflow" },
+  { "Name": "Operating Cash Flow", "Description": "Measures operating cash flow", "CalculationMethod": "Operating cash flow = Cash generated from operations", "Example": "Operating cash flow = $12000", "Formula": "Cash Generated from Operations" },
+  { "Name": "Free Cash Flow", "Description": "Tracks free cash flow", "CalculationMethod": "Free cash flow = Operating cash flow - Capital expenditures", "Example": "Operating cash flow = $12000, Capital expenditures = $2000, Free cash flow = $10000", "Formula": "Operating Cash Flow - Capital Expenditures" },
+  { "Name": "Cash Flow Margin", "Description": "Measures cash flow margin", "CalculationMethod": "Cash flow margin = (Operating cash flow / Net sales) * 100", "Example": "Operating cash flow = $12000, Net sales = $40000, Cash flow margin = 30%", "Formula": "(Operating Cash Flow / Net Sales) * 100" },
+  { "Name": "Cash Conversion Cycle (CCC)", "Description": "Tracks cash conversion cycle", "CalculationMethod": "CCC = Days inventory outstanding + Days sales outstanding - Days payable outstanding", "Example": "DIO = 30, DSO = 45, DPO = 60, CCC = 15 days", "Formula": "DIO + DSO - DPO" }
+],
+"Investment Analysis": [
+{ "Name": "Return on Investment (ROI)", "Description": "Tracks the performance of investments", "CalculationMethod": "ROI = (Net profit / Investment cost) * 100", "Example": "Net profit = $5000, Investment cost = $20000, ROI = 25%", "Formula": "(Net Profit / Investment Cost) * 100" },
+{ "Name": "Payback Period", "Description": "Measures payback period", "CalculationMethod": "Payback period = Investment cost / Annual cash inflow", "Example": "Investment cost = $20000, Annual cash inflow = $5000, Payback period = 4 years", "Formula": "Investment Cost / Annual Cash Inflow" },
+{ "Name": "Net Present Value (NPV)", "Description": "Tracks net present value", "CalculationMethod": "NPV = Sum of present values of cash flows - Initial investment", "Example": "Present value of cash flows = $25000, Initial investment = $20000, NPV = $5000", "Formula": "Sum of Present Values of Cash Flows - Initial Investment" },
+{ "Name": "Internal Rate of Return (IRR)", "Description": "Measures internal rate of return", "CalculationMethod": "IRR = Discount rate that makes NPV = 0", "Example": "IRR = 15%", "Formula": "Discount Rate that makes NPV = 0" },
+{ "Name": "Profitability Index (PI)", "Description": "Tracks profitability index", "CalculationMethod": "PI = Present value of future cash flows / Initial investment", "Example": "Present value of future cash flows = $25000, Initial investment = $20000, PI = 1.25", "Formula": "Present Value of Future Cash Flows / Initial Investment" }
+]
+}

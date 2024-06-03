@@ -1,0 +1,23 @@
+{
+    "Campaign Performance": [
+        { "Category": "Campaign Performance", "Definition": "Tracks the effectiveness of marketing campaigns", "CalculationMethod": "Conversion rate = (Conversions / Total visitors) * 100", "Example": "Conversions = 50, Total visitors = 1000, Conversion rate = 5%" },
+        { "Category": "Campaign Performance", "Definition": "Measures click-through rate", "CalculationMethod": "Click-through rate (CTR) = (Clicks / Impressions) * 100", "Example": "Clicks = 100, Impressions = 5000, CTR = 2%" },
+        { "Category": "Campaign Performance", "Definition": "Tracks return on marketing investment", "CalculationMethod": "ROMI = (Revenue from campaign - Cost of campaign) / Cost of campaign * 100", "Example": "Revenue = $15000, Cost = $5000, ROMI = 200%" },
+        { "Category": "Campaign Performance", "Definition": "Measures cost per conversion", "CalculationMethod": "Cost per conversion = Total campaign cost / Number of conversions", "Example": "Total cost = $1000, Conversions = 50, Cost per conversion = $20" },
+        { "Category": "Campaign Performance", "Definition": "Tracks engagement rate", "CalculationMethod": "Engagement rate = (Total engagements / Total reach) * 100", "Example": "Total engagements = 200, Total reach = 1000, Engagement rate = 20%" }
+    ],
+    "Customer Acquisition Cost": [
+        { "Category": "Customer Acquisition Cost", "Definition": "Tracks the cost to acquire a new customer", "CalculationMethod": "CAC = Total marketing cost / Number of new customers", "Example": "Total marketing cost = $10000, New customers = 100, CAC = $100" },
+        { "Category": "Customer Acquisition Cost", "Definition": "Measures customer acquisition efficiency", "CalculationMethod": "Customer acquisition efficiency = (Revenue from new customers / CAC) * 100", "Example": "Revenue = $20000, CAC = $10000, Efficiency = 200%" },
+        { "Category": "Customer Acquisition Cost", "Definition": "Tracks cost per lead", "CalculationMethod": "Cost per lead = Total lead generation cost / Number of leads", "Example": "Total lead cost = $5000, Leads = 200, Cost per lead = $25" },
+        { "Category": "Customer Acquisition Cost", "Definition": "Measures lifetime value to CAC ratio", "CalculationMethod": "LTV:CAC ratio = Customer lifetime value / CAC", "Example": "LTV = $500, CAC = $100, Ratio = 5" },
+        { "Category": "Customer Acquisition Cost", "Definition": "Tracks marketing qualified leads (MQL)", "CalculationMethod": "Number of MQLs generated", "Example": "MQLs = 50" }
+    ],
+    "Brand Awareness": [
+        { "Category": "Brand Awareness", "Definition": "Tracks the level of brand awareness", "CalculationMethod": "Brand recall rate = (Number of respondents who recall the brand / Total respondents) * 100", "Example": "Respondents recalling brand = 200, Total respondents = 500, Recall rate = 40%" },
+        { "Category": "Brand Awareness", "Definition": "Measures brand reach", "CalculationMethod": "Total reach = Number of unique individuals exposed to the brand", "Example": "Total reach = 10000" },
+        { "Category": "Brand Awareness", "Definition": "Tracks social media mentions", "CalculationMethod": "Number of brand mentions on social media", "Example": "Brand mentions = 500" },
+        { "Category": "Brand Awareness", "Definition": "Measures share of voice", "CalculationMethod": "Share of voice = (Brand mentions / Total mentions in industry) * 100", "Example": "Brand mentions = 500, Total mentions = 5000, Share of voice = 10%" },
+        { "Category": "Brand Awareness", "Definition": "Tracks brand sentiment", "CalculationMethod": "Brand sentiment = (Positive mentions - Negative mentions) / Total mentions", "Example": "Positive mentions = 300, Negative mentions = 100, Total mentions = 500, Sentiment = 40%" }
+    ]
+}

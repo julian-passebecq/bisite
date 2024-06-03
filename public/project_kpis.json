@@ -1,0 +1,24 @@
+{
+  "Project Completion": [
+    { "Category": "Project Completion", "Definition": "Tracks the completion rate of projects", "CalculationMethod": "Completion rate = (Number of completed projects / Total projects) * 100", "Example": "Completed projects = 8, Total projects = 10, Completion rate = 80%" },
+    { "Category": "Project Completion", "Definition": "Measures project success rate", "CalculationMethod": "Success rate = (Number of successful projects / Total projects) * 100", "Example": "Successful projects = 7, Total projects = 10, Success rate = 70%" },
+    { "Category": "Project Completion", "Definition": "Tracks project delay rate", "CalculationMethod": "Delay rate = (Number of delayed projects / Total projects) * 100", "Example": "Delayed projects = 2, Total projects = 10, Delay rate = 20%" },
+    { "Category": "Project Completion", "Definition": "Measures project cancellation rate", "CalculationMethod": "Cancellation rate = (Number of cancelled projects / Total projects) * 100", "Example": "Cancelled projects = 1, Total projects = 10, Cancellation rate = 10%" },
+    { "Category": "Project Completion", "Definition": "Tracks on-budget projects", "CalculationMethod": "On-budget rate = (Number of on-budget projects / Total projects) * 100", "Example": "On-budget projects = 9, Total projects = 10, On-budget rate = 90%" }
+  ],
+  "Resource Utilization": [
+      { "Category": "Resource Utilization", "Definition": "Tracks the utilization of project resources", "CalculationMethod": "Utilization rate = (Actual hours worked / Available hours) * 100", "Example": "Actual hours worked = 1500, Available hours = 2000, Utilization rate = 75%" },
+      { "Category": "Resource Utilization", "Definition": "Measures resource efficiency", "CalculationMethod": "Resource efficiency = (Output / Total resources used) * 100", "Example": "Output = $30000, Resources used = $40000, Efficiency = 75%" },
+      { "Category": "Resource Utilization", "Definition": "Tracks resource allocation", "CalculationMethod": "Percentage of resources allocated to projects", "Example": "Resources allocated = 80, Total resources = 100, Allocation percentage = 80%" },
+      { "Category": "Resource Utilization", "Definition": "Tracks resource allocation", "CalculationMethod": "Percentage of resources allocated to projects", "Example": "Resources allocated = 80, Total resources = 100, Allocation percentage = 80%" },
+      { "Category": "Resource Utilization", "Definition": "Measures resource availability", "CalculationMethod": "Resource availability rate = (Available resources / Total resources) * 100", "Example": "Available resources = 90, Total resources = 100, Availability rate = 90%" },
+      { "Category": "Resource Utilization", "Definition": "Tracks resource turnover", "CalculationMethod": "Resource turnover rate = (Number of resources replaced / Total resources) * 100", "Example": "Resources replaced = 5, Total resources = 100, Turnover rate = 5%" }
+  ],
+  "Project Budget": [
+      { "Category": "Project Budget", "Definition": "Tracks the adherence to project budgets", "CalculationMethod": "Budget variance = Actual cost - Budgeted cost", "Example": "Actual cost = $9000, Budgeted cost = $10000, Variance = -$1000" },
+      { "Category": "Project Budget", "Definition": "Measures budget utilization", "CalculationMethod": "Budget utilization rate = (Actual spending / Budgeted amount) * 100", "Example": "Actual spending = $9000, Budgeted amount = $10000, Utilization rate = 90%" },
+      { "Category": "Project Budget", "Definition": "Tracks budget overruns", "CalculationMethod": "Percentage of budget overrun = (Overrun amount / Budgeted amount) * 100", "Example": "Overrun amount = $2000, Budgeted amount = $10000, Percentage = 20%" },
+      { "Category": "Project Budget", "Definition": "Measures budget compliance", "CalculationMethod": "Budget compliance rate = (Compliant expenditures / Total expenditures) * 100", "Example": "Compliant expenditures = $9500, Total expenditures = $10000, Compliance rate = 95%" },
+      { "Category": "Project Budget", "Definition": "Tracks budget adjustments", "CalculationMethod": "Total budget adjustments = Sum of all budget changes", "Example": "Total budget adjustments = $500" }
+  ]
+}

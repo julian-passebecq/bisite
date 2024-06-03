@@ -4,12 +4,17 @@ import "./SubNav.css";
 interface SubNavProps {
     subCategories: string[];
     onSubCategoryChange: (subCategory: string) => void;
+    activeSecondaryCategory: string;
 }
 
-const SubNav: React.FC<SubNavProps> = ({ subCategories, onSubCategoryChange }) => {
+const SubNav: React.FC<SubNavProps> = ({ subCategories, onSubCategoryChange, activeSecondaryCategory }) => {
     const handleSubCategoryClick = (subCategory: string) => {
         onSubCategoryChange(subCategory);
     };
+
+    if (activeSecondaryCategory !== "kpi") {
+        return null;
+    }
 
     return (
         <nav className="sub-nav">

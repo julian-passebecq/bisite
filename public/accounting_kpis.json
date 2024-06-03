@@ -1,18 +1,37 @@
 {
   "General Ledger": [
-    { "Category": "General Ledger", "Definition": "Tracks all financial transactions", "CalculationMethod": "Sum of all debits and credits", "Example": "Example: Total debits = $500, Total credits = $500" },
-    { "Category": "General Ledger", "Definition": "Tracks all financial transactions", "CalculationMethod": "Sum of all debits and credits", "Example": "Example: Total debits = $500, Total credits = $500" }
+    { "Name": "Total Debits and Credits", "Description": "Tracks all financial transactions", "CalculationMethod": "Sum of all debits and credits", "Example": "Total debits = $500, Total credits = $500", "Formula": "Total Debits + Total Credits" },
+    { "Name": "Net Income", "Description": "Measures overall financial health", "CalculationMethod": "Net income = Total revenue - Total expenses", "Example": "Total revenue = $10000, Total expenses = $8000, Net income = $2000", "Formula": "Total Revenue - Total Expenses" },
+    { "Name": "Equity", "Description": "Tracks equity changes", "CalculationMethod": "Equity = Assets - Liabilities", "Example": "Assets = $15000, Liabilities = $5000, Equity = $10000", "Formula": "Assets - Liabilities" },
+    { "Name": "Current Ratio", "Description": "Measures liquidity", "CalculationMethod": "Current ratio = Current assets / Current liabilities", "Example": "Current assets = $7000, Current liabilities = $3500, Current ratio = 2", "Formula": "Current Assets / Current Liabilities" },
+    { "Name": "Net Cash Flow", "Description": "Tracks cash flow", "CalculationMethod": "Net cash flow = Cash inflow - Cash outflow", "Example": "Cash inflow = $12000, Cash outflow = $9000, Net cash flow = $3000", "Formula": "Cash Inflow - Cash Outflow" }
   ],
   "Accounts Payable": [
-    { "Category": "Accounts Payable", "Definition": "Tracks money owed by the company", "CalculationMethod": "Sum of all outstanding payables", "Example": "Example: Total payables = $2000" }
+    { "Name": "Total Payables", "Description": "Tracks money owed by the company", "CalculationMethod": "Sum of all outstanding payables", "Example": "Total payables = $2000", "Formula": "Sum of all Outstanding Payables" },
+    { "Name": "Days Payable Outstanding (DPO)", "Description": "Measures average payment period", "CalculationMethod": "DPO = (Accounts payable / Cost of goods sold) * Number of days", "Example": "Accounts payable = $10000, COGS = $60000, Days = 365, DPO = 60.83", "Formula": "(Accounts Payable / Cost of Goods Sold) * Number of Days" },
+    { "Name": "Percentage of Overdue Payables", "Description": "Tracks overdue payables", "CalculationMethod": "Percentage of overdue payables = (Overdue payables / Total payables) * 100", "Example": "Overdue payables = $500, Total payables = $2000, Percentage = 25%", "Formula": "(Overdue Payables / Total Payables) * 100" },
+    { "Name": "Payment Accuracy Rate", "Description": "Measures payment accuracy", "CalculationMethod": "Payment accuracy rate = (Accurate payments / Total payments) * 100", "Example": "Accurate payments = 98, Total payments = 100, Accuracy rate = 98%", "Formula": "(Accurate Payments / Total Payments) * 100" },
+    { "Name": "Early Payment Discount Savings", "Description": "Tracks early payment discounts", "CalculationMethod": "Early payment discount savings = Sum of all discounts received", "Example": "Discounts received = $300", "Formula": "Sum of all Discounts Received" }
   ],
   "Accounts Receivable": [
-    { "Category": "Accounts Receivable", "Definition": "Tracks money owed to the company", "CalculationMethod": "Sum of all outstanding receivables", "Example": "Example: Total receivables = $3000" }
+    { "Name": "Total Receivables", "Description": "Tracks money owed to the company", "CalculationMethod": "Sum of all outstanding receivables", "Example": "Total receivables = $3000", "Formula": "Sum of all Outstanding Receivables" },
+    { "Name": "Days Sales Outstanding (DSO)", "Description": "Measures collection period", "CalculationMethod": "DSO = (Accounts receivable / Total credit sales) * Number of days", "Example": "Accounts receivable = $8000, Credit sales = $96000, Days = 365, DSO = 30.42", "Formula": "(Accounts Receivable / Total Credit Sales) * Number of Days" },
+    { "Name": "Percentage of Overdue Receivables", "Description": "Tracks overdue receivables", "CalculationMethod": "Percentage of overdue receivables = (Overdue receivables / Total receivables) * 100", "Example": "Overdue receivables = $500, Total receivables = $3000, Percentage = 16.67%", "Formula": "(Overdue Receivables / Total Receivables) * 100" },
+    { "Name": "Collection Efficiency", "Description": "Measures collection efficiency", "CalculationMethod": "Collection efficiency = (Collected amount / Total receivables) * 100", "Example": "Collected amount = $2700, Total receivables = $3000, Efficiency = 90%", "Formula": "(Collected Amount / Total Receivables) * 100" },
+    { "Name": "Bad Debt Percentage", "Description": "Tracks bad debt", "CalculationMethod": "Bad debt percentage = (Bad debt / Total receivables) * 100", "Example": "Bad debt = $150, Total receivables = $3000, Percentage = 5%", "Formula": "(Bad Debt / Total Receivables) * 100" }
   ],
   "Fixed Assets": [
-    { "Category": "Fixed Assets", "Definition": "Tracks the value of fixed assets", "CalculationMethod": "Net book value = Cost - Accumulated depreciation", "Example": "Example: Net book value = $10000 - $2000 = $8000" }
+    { "Name": "Net Book Value", "Description": "Tracks the value of fixed assets", "CalculationMethod": "Net book value = Cost - Accumulated depreciation", "Example": "Net book value = $10000 - $2000 = $8000", "Formula": "Cost - Accumulated Depreciation" },
+    { "Name": "Asset Turnover Ratio", "Description": "Measures asset utilization", "CalculationMethod": "Asset turnover ratio = Net sales / Average total assets", "Example": "Net sales = $50000, Average total assets = $25000, Turnover ratio = 2", "Formula": "Net Sales / Average Total Assets" },
+    { "Name": "Total Asset Acquisitions", "Description": "Tracks asset acquisition", "CalculationMethod": "Total asset acquisitions = Sum of all asset purchases", "Example": "Total asset acquisitions = $15000", "Formula": "Sum of all Asset Purchases" },
+    { "Name": "Depreciation Expense", "Description": "Measures depreciation expense", "CalculationMethod": "Depreciation expense = Total depreciation for the period", "Example": "Depreciation expense = $3000", "Formula": "Total Depreciation for the Period" },
+    { "Name": "Total Asset Disposals", "Description": "Tracks asset disposal", "CalculationMethod": "Total asset disposals = Sum of all asset sales", "Example": "Total asset disposals = $5000", "Formula": "Sum of all Asset Sales" }
   ],
   "Financial Reporting and Analysis": [
-    { "Category": "Financial Reporting and Analysis", "Definition": "Tracks financial performance through reports and analysis", "CalculationMethod": "Varies by report type", "Example": "Example: Income statement shows a net profit of $5000" }
+    { "Name": "Net Profit", "Description": "Tracks financial performance through reports and analysis", "CalculationMethod": "Varies by report type", "Example": "Income statement shows a net profit of $5000", "Formula": "N/A" },
+    { "Name": "Gross Profit Margin", "Description": "Measures profitability", "CalculationMethod": "Gross profit margin = (Gross profit / Revenue) * 100", "Example": "Gross profit = $6000, Revenue = $10000, Margin = 60%", "Formula": "(Gross Profit / Revenue) * 100" },
+    { "Name": "Operating Expense Ratio", "Description": "Tracks operating expenses", "CalculationMethod": "Operating expense ratio = (Operating expenses / Revenue) * 100", "Example": "Operating expenses = $4000, Revenue = $10000, Ratio = 40%", "Formula": "(Operating Expenses / Revenue) * 100" },
+    { "Name": "Return on Assets (ROA)", "Description": "Measures return on assets", "CalculationMethod": "ROA = Net income / Total assets", "Example": "Net income = $2000, Total assets = $20000, ROA = 10%", "Formula": "Net Income / Total Assets" },
+    { "Name": "Earnings Before Interest and Taxes (EBIT)", "Description": "Tracks earnings before interest and taxes", "CalculationMethod": "EBIT = Revenue - Expenses (excluding interest and tax)", "Example": "Revenue = $10000, Expenses = $7000, EBIT = $3000", "Formula": "Revenue - Expenses (excluding interest and tax)" }
   ]
 }
